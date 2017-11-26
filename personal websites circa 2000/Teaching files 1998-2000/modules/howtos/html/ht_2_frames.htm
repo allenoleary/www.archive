@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0" height="266">
+  <tr> 
+    <td height="447"> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>HTML Framesets 
+	</b></font></p>
+      <blockquote> 
+	<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Framesets: 
+	  Introduction </b></font></p>
+	<blockquote> 
+	  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Framesets 
+	    are html documents that tell a browser how to display other document 
+	    in their own seperate panels.</font></p>
+	  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Framesets 
+	    have some advantages:</font></p>
+	</blockquote>
+	<ul>
+	  <ul>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">They 
+	      assist in navigtation as navigation iinformation does not have to 
+	      scroll with a content page</font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">They 
+	      can make a site look good</font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Only 
+	      one page loads at a time, which is visually less tiring</font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">There 
+	      are less pages to update if navigation changes</font></li>
+	  </ul>
+	</ul>
+	<blockquote> 
+	  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">There 
+	    are some disadvantages:</font></p>
+	  <ul>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">It's 
+	      can be very hard to link from one content page to another </font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Some 
+	      (very) old browsers and newer devices like handhelds (palm pilots 
+	      and similar) don't like them much</font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">They 
+	      have to be planned carefully to make sure they don't take up too 
+	      much space</font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Because 
+	      the structure is more confusing, updating pages can be a headache</font></li>
+	    <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Most 
+	      database driven sites avoid frames</font></li>
+	  </ul>
+	  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Here's 
+	    a couple of sites that use frames to aid navigation:</font></p>
+	  <blockquote> 
+	    <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="http://www.webmonkey.com" target="_blank">http://www.aana.com.au</a><br>
+	      <a href="http://www.webmonkey.com" target="_blank">http://www.amcal.com.au</a></font></p>
+	  </blockquote>
+	  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Here's 
+	    some sites that avoid it (because of the linking issue)</font></p>
+	  <blockquote> 
+	    <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="http://www.webmonkey.com" target="_blank">http://www.webmonkey.com</a><br>
+	      <a href="http://www.macromedia.com%20" target="_blank">http://www.macromedia.com 
+	      </a></font></p>
+	  </blockquote>
+	</blockquote>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>Framesets: 
+	The basic idea</b></font></p>
+      <blockquote> 
+	<p> <code>&lt;html&gt;<br>
+	  &lt;head&gt;<br>
+	  &lt;title&gt;My First Frameset&lt;/title&gt;<br>
+	  &lt;/head&gt;</code></p>
+	<p><code>&lt;frameset rows=&quot;100,*&quot;&gt; <br>
+	  &lt;frame src=&quot;top.htm&quot;&gt;<br>
+	  &lt;frame src=&quot;main.htm&quot;&gt;<br>
+	  &lt;/frameset&gt;<br>
+	  <br>
+	  &lt;noframes&gt;&lt;body bgcolor=&quot;#FFFFFF&quot;&gt;<br>
+	  This site uses frames...<br>
+	  </code><code>&lt;/body&gt;&lt;/noframes&gt;<br>
+	  &lt;/html&gt;</code></p>
+	<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">This 
+	  html document will load two other documents (top.htm and main.htm) into 
+	  two rows in the browser window. The top pane will 100 pixels deep and 
+	  the lower one will take the rest of the browser window.</font></p>
+	<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Do 
+	  this:</font></p>
+	<ul>
+	  <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Copy 
+	    the above code into a new page and save it as frame.htm. </font></li>
+	  <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">In 
+	    the same directory, make two pages, one called top.htm and another 
+	    called main.htm and save them. </font></li>
+	  <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Open 
+	    frame.htm into a browser</font></li>
+	</ul>
+	<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">There's 
+	  a few things to note about this frameset:</font></p>
+	<ul>
+	  <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">There 
+	    are (ugly) 3d borders displayed</font></li>
+	  <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">The 
+	    user can freely drag the border up and down</font></li>
+	</ul>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>Using 
+	rows and cols</b></font></p>
+      <blockquote> 
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You can specify 
+	  rows or cols for each &lt;frameset&gt; tag, not both.</font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Ther allowable 
+	  units of measure are:</font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">pixels: rows=<b>200</b>, 
+	  *&quot;<br>
+	  percentages: rows=&quot;<b>20%</b>,*&quot;<br>
+	  the * just tells the browser to use up the available space</font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You get a 
+	  fixed-width border at the bottom of the page by: rows=&quot;*, 120&quot; 
+	  </font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You can use 
+	  as many rows or cols as you want: cols=&quot;150, *, 100&quot; give 
+	  you two fixed width panels, one at the top and one at the bottom, and 
+	  a free-sized centre panel. You must match the number of rows or cols 
+	  with &lt;frame&gt;&lt;/frame&gt; tag sets.</font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You can also 
+	  add a border color (rendered by IE only): <b>bordercolor=&quot;#ffggbb&quot;</b></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Further Attributes 
+	of the &lt;frame&gt; tag:</b></font></p>
+      <blockquote> 
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">frameborder=1|0 
+	  turns borders on or off<br>
+	  marginheight=n and marginwidth=n act as they do in a body tag<br>
+	  name=&quot;whatever&quot; give the panel a target name you use to link 
+	  to content<br>
+	  noresize disables the users ability to drag the borders<br>
+	  scrolling=yes|no|auto controls how clipped content behaves<br>
+	  src=&quot;url&quot; tells the browser which page starts inside that 
+	  panel of the frameset</font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Do this: add 
+	  the following information to your frameset to make it behave better:</font></p>
+	<p><code>&lt;html&gt;<br>
+	  &lt;head&gt;<br>
+	  &lt;title&gt;My Second Frameset&lt;/title&gt;<br>
+	  &lt;/head&gt;</code></p>
+	<p><code>&lt;frameset rows=&quot;100,*&quot;&gt; <br>
+	  &lt;frame src=&quot;top.htm&quot; noresize marginheight=0 marginwidth=0 
+	  scrolling=&quot;auto&quot;&gt;<br>
+	  &lt;frame src=&quot;main.htm&quot; noresize marginheight=0 marginwidth=0 
+	  scrolling=&quot;auto&quot;&gt;<br>
+	  &lt;/frameset&gt;<br>
+	  <br>
+	  &lt;noframes&gt;&lt;body bgcolor=&quot;#FFFFFF&quot;&gt;<br>
+	  This site uses frames...<br>
+	  </code><code>&lt;/body&gt;&lt;/noframes&gt;<br>
+	  &lt;/html&gt;</code></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Nesting Framesets</b></font></p>
+      <blockquote> 
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">More complex 
+	  framed layouts are achieved by nesting framesets, just like you do with 
+	  tables: You will need to make another page called 'left.htm' for this 
+	  to work.</font></p>
+	<p><code>&lt;html&gt;<br>
+	  &lt;head&gt;<br>
+	  &lt;title&gt;My Third Frameset&lt;/title&gt;<br>
+	  &lt;/head&gt;</code></p>
+	<p><code>&lt;frameset rows=&quot;100,*&quot; frameborder=0&gt; <br>
+	  &lt;frame src=&quot;top.htm&quot; noresize marginheight=0 marginwidth=0 
+	  scrolling=&quot;no&quot;&gt;<br>
+	  &lt;frameset cols=&quot;150,*&quot; frameborder=0&gt;<br>
+	  &lt;frame src=&quot;left.htm&quot; noresize marginheight=0 marginwidth=0 
+	  scrolling=&quot;no&quot;&gt;<br>
+	  &lt;frame src=&quot;main.htm&quot; noresize marginheight=0 marginwidth=0 
+	  scrolling=&quot;auto&quot;&gt;<br>
+	  &lt;/frameset&gt; <br>
+	  &lt;/frameset&gt;<br>
+	  <br>
+	  &lt;noframes&gt;&lt;body bgcolor=&quot;#FFFFFF&quot;&gt;<br>
+	  This site uses frames...<br>
+	  </code><code>&lt;/body&gt;&lt;/noframes&gt;<br>
+	  &lt;/html&gt;</code></p>
+      </blockquote>
+      <p><code><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Some things 
+	to note about this frameset:</font></code></p>
+      <blockquote> 
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">We added the 
+	  frameborder=0 into the &lt;frameset&gt; tag to show borders being rendered.</font></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">We set two 
+	  windows to not scroll, and the main page to scroll only if there was 
+	  clipping (auto)</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Using the 
+	name attribute to link pages from one frame to another:</b></font></p>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">We set the name 
+	attribute so that we can use the target attribute inside the &lt;a href&gt; 
+	tag:</font></p>
+      <p><code>&lt;html&gt;<br>
+	&lt;head&gt;<br>
+	&lt;title&gt;My Third Frameset&lt;/title&gt;<br>
+	&lt;/head&gt;</code></p>
+      <p><code>&lt;frameset rows=&quot;100,*&quot; frameborder=0&gt; <br>
+	&lt;frame src=&quot;top.htm&quot; noresize marginheight=0 marginwidth=0 
+	scrolling=&quot;no&quot;&gt;<br>
+	&lt;frameset cols=&quot;150,*&quot; frameborder=0 name=&quot;top&quot;&gt;<br>
+	&lt;frame src=&quot;left.htm&quot; noresize marginheight=0 marginwidth=0 
+	scrolling=&quot;no&quot; name=&quot;left&quot;&gt;<br>
+	&lt;frame src=&quot;main.htm&quot; noresize marginheight=0 marginwidth=0 
+	scrolling=&quot;auto&quot; name=&quot;main&quot;&gt;<br>
+	&lt;/frameset&gt; <br>
+	&lt;/frameset&gt;<br>
+	<br>
+	&lt;noframes&gt;&lt;body bgcolor=&quot;#FFFFFF&quot;&gt;<br>
+	This site uses frames...<br>
+	</code><code>&lt;/body&gt;&lt;/noframes&gt;<br>
+	&lt;/html&gt;</code></p>
+      <blockquote>
+	<p><code><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Now 
+	  we can control what page loads into the main window from the side window:</font></code></p>
+	<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">In side.htm 
+	  doing this:</font></p>
+	<blockquote>
+	  <p><code>&lt;a href=&quot;newpage.htm&quot; target=&quot;main&quot;&gt;Load 
+	    a new page&lt;/a&gt;</code></p>
+	</blockquote>
+	<p><code><font face="Verdana, Arial, sans-serif, Tahoma" size="2">will 
+	  result in a link that loads &quot;newpage.htm&quot;into the main window 
+	  and not the side window. This goes all ways, so we can target any frame 
+	  from any other.</font></code></p>
+	    <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><a href="../../../exercises/html/ht_ex_7_frames.htm">Exercise: 
+          build a frameset and link it up</a></font></p>
+      </blockquote>
+      <p><a href="javascript:history.back(1)"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;&lt; 
+        back</font></a></p>
+      <blockquote>&nbsp;</blockquote>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+
+<html>
+<head>
+	<script language="JavaScript">
+	<!-- Hide this script from old browsers --/*
+   
+   var myCount = 0
+ 	var expDays = 30
+var exp = new Date(); exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+
+function Who(info){                
+				var VisitorName = GetCookie('VisitorName')
+                if (VisitorName == null) {
+                        VisitorName = prompt("Who are you?",'');
+                        SetCookie ('VisitorName', VisitorName, exp);
+                }        return VisitorName;}
+				
+function When(info){
+                var rightNow = new Date()                
+				var WWHTime = 0
+                WWHTime = GetCookie('WWhenH')                
+                WWHTime = WWHTime * 1
+                var lastHereFormatting = new Date(WWHTime);  // Date-i-fy that number
+                var intLastVisit = (lastHereFormatting.getYear() * 10000)+(lastHereFormatting.getMonth() * 100) + lastHereFormatting.getDate()
+                var lastHereInDateFormat = "" + lastHereFormatting;  // Gotta use substring functions
+                var dayOfWeek = lastHereInDateFormat.substring(0,3)
+                var dateMonth = lastHereInDateFormat.substring(4,11)
+                var timeOfDay = lastHereInDateFormat.substring(11,16)
+                var year = lastHereInDateFormat.substring(23,25)
+                var WWHText = dayOfWeek + ", " + dateMonth + " at " + timeOfDay // display
+                SetCookie ("WWhenH", rightNow.getTime(), exp)
+        return WWHText;}
+		
+function Count(info){
+        var WWHCount = GetCookie('WWHCount')
+                if (WWHCount == null) {WWHCount = 0;
+                } else{WWHCount++;}
+		SetCookie ('WWHCount', WWHCount, exp);
+        return WWHCount;
+		var myCount = WWHCount}
+		
+function set(){
+        VisitorName = prompt("Who are you?",'');
+        SetCookie ('VisitorName', VisitorName, exp);
+        SetCookie ('WWHCount', 0, exp);        SetCookie ('WWhenH', 0, exp);
+		document.location ='40.html';return true;}
+		
+function getCookieVal (offset) {  
+        var endstr = document.cookie.indexOf (";", offset);  
+        if (endstr == -1)  
+		endstr = document.cookie.length; return unescape(document.cookie.substring(offset, endstr));}
+				
+function GetCookie (name) {          
+		var arg = name + "=";  
+        var alen = arg.length;
+		var clen = document.cookie.length;  
+        var i = 0;  while (i < clen) {            
+			var j = i + alen;    
+        if (document.cookie.substring(i, j) == arg)      
+                return getCookieVal (j);    
+                i = document.cookie.indexOf(" ", i) + 1;    
+                if (i == 0) break;           }          return null;}
+function SetCookie (name, value) {
+        var argv = SetCookie.arguments;  
+        var argc = SetCookie.arguments.length;  
+        var expires = (argc > 2) ? argv[2] : null;  
+        var path = (argc > 3) ? argv[3] : null;  
+        var domain = (argc > 4) ? argv[4] : null;  
+        var secure = (argc > 5) ? argv[5] : false;  
+        document.cookie = name + "=" + escape (value) + 
+        ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + 
+        ((path == null) ? "" : ("; path=" + path)) +  
+        ((domain == null) ? "" : ("; domain=" + domain)) +    
+        ((secure == true) ? "; secure" : "");}
+		
+function DeleteCookie (name) {  
+        var exp = new Date(); exp.setTime (exp.getTime() - 1); // This cookie is history          
+		var cval = GetCookie (name); document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();}
+// -- End Hiding Here -->
+</script>
+
+<script type="text/javascript" language="JavaScript">
+
+//my little functions for use in the casino projects
+
+function CheckCount () {
+
+var myCount=GetCookie('WWHCount')
+//return myCount
+	if (myCount = 4)
+	parent.frames[5].location="17.htm";
+		else if (myCount >= 9)
+	parent.frames[1].location="21.htm";
+}
+
+//this one is for debugging so i can set the counter back!
+
+function zeRo() {
+	
+	SetCookie ('WWHCount', 0, exp)
+	document.location = "20.htm"
+
+	}
+	
+//this is the standard four loader for the casino project
+
+function loadMeUp(){
+
+	for (count=0; count < 4; count++)
+	{
+	PageName = ""
+	randomPage = ""
+	frameNum = ""
+	
+	randomPage = Math.round(Math.random() * 41)
+	frameNum = Math.round(Math.random() * 11)
+	PageName = randomPage + ".htm"
+	
+	parent.frames[frameNum].location=PageName
+	}
+}
+
+
+</script>
+
+<style type="text/css">
+<!--
+h1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 36pt; font-weight: bold}
+-->
+</style></HEAD>
+
+
+<BODY BGCOLOR="#ffffff" link="#CC0033" vlink="#333399" alink="#FF0000" onLoad="CheckCount()">
+<script language="JavaScript">
+<!-- Hide this script from old browsers --/*
+   
+document.write("<P>")
+document.write("<table width=100%><tr><td align=center><H1>" + Count() + "</H1></td></tr></table>")
+document.write('<a href="JavaScript:zeRo()">reset</a>')
+document.write('<a href="Javascript:LoadMeUp()">go</a>')
+
+// -- End Hiding Here -->
+</script>
+</BODY></HTML>

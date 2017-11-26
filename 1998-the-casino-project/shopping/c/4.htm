@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<html>
+<head>
+<title>shop_starter</title>
+  <script language="JavaScript">
+<!--
+function YY_Layerfx(yyleft,yytop,yyfnx,yyfny,yydiv,yybilder,yyloop,yyto,yycnt,yystep) { //v1.2
+//copyright (c)1998 Yaromat, Jaro von Flocken
+ if ((document.layers)||(document.all)){
+  eval("myfunc=yyfnx.replace(/x/gi, yycnt)");
+  with (Math) {yynextx= eval(myfunc)}
+  eval("myfunc=yyfny.replace(/x/gi, yycnt)");
+  with (Math) {yynexty= eval(myfunc)}
+  yycnt=(yyloop && yycnt>=yystep*yybilder)?0:yycnt+yystep;
+  if (document.layers){
+    eval(yydiv+".top="+(yynexty+yytop))
+    eval(yydiv+".left="+(yynextx+yyleft))
+  }
+  if (document.all){
+    eval("yydiv=yydiv.replace(/.layers/gi, '.all')");
+    eval(yydiv+".style.pixelTop="+(yynexty+yytop));
+    eval(yydiv+".style.pixelLeft="+(yynextx+yyleft));
+  }
+  argStr='YY_Layerfx('+yyleft+','+yytop+',"'+yyfnx+'","'+yyfny+'","'+yydiv+'",'+yybilder+','+yyloop+','+yyto+','+yycnt+','+yystep+')';
+  if (yycnt<=yystep*yybilder){eval(yydiv+".yyto=setTimeout(argStr,yyto)");}
+ }
+
+}
+//-->
+</script>
+</head>
+<body bgcolor="#000000" text="White" link="White" vlink="White" alink="White" leftmargin=0 topmargin=0 onLoad="YY_Layerfx(1,1,'cos\(x/10\)*150','1','document.layers[\'Layer1\']',50,false,500,0,2)">
+<div id="Layer1" style="position:absolute; left:4px; top:-20px; width:300px; height:180px; z-index:1"><img src="../shop_images/twirl19_neg.jpg" width="266" height="336" border="0"></div>
+<h1>&nbsp;</h1>
+</body>
+</html>

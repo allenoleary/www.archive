@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>19_offstage_loader</TITLE>
+<SCRIPT language="JavaScript">
+function randomPhrase() {
+
+// this page is the random phrase maker that writes a central line, to be run
+// three times then exited. the count is maintained by 20.htm
+	
+// a function that generates randoms in a range, $ them to htm and loads them
+
+	myFirst = Math.round(Math.random()* 4);
+	mySecond = Math.round(Math.random()* 4) + 6;
+	myThird = Math.round(Math.random()* 4) + 11;
+		
+	fileFirst = myFirst + '.htm';
+	fileSecond = mySecond + '.htm';
+	fileThird = myThird + '.htm';
+	
+	top.frames('4').location=fileFirst;
+	top.frames('5').location="5.htm";
+	top.frames('6').location=fileSecond;
+	top.frames('7').location=fileThird;
+
+	
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" onLoad="randomPhrase()">
+Loader Down Below A
+
+</BODY>
+</html>

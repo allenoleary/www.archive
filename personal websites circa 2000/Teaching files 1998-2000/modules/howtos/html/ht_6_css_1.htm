@@ -1,0 +1,278 @@
+<html>
+<head>
+<title>Style Sheets 1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Style 
+        Sheets 1: The Basics</b></font></p>
+      <p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The Idea</font></b></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Style sheets 
+        are a return to the one of the basic tenets of the internet - the seperation 
+        of presentation and content. Whiile initially this was a move to stop 
+        the proliferation of propprietry tags from Netscape and Microsoft, style-sheets 
+        are now extremely important that the web is atarting to be accessed from 
+        an increasing variety of hand-held devices, TV's, game consoles and so 
+        on.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>The Positives</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Style sheets 
+        mean that all pages on a site can read just one set of information about 
+        presentation. This means that changing a single text-file can affect the 
+        look of hundreds of pages. JavaScript can also be used to link to different 
+        satyle-sheets depending on the viewing device, screen width and so on. 
+        It also eliminates the &lt;font&gt; tag and a significant amount of size 
+        from documents, and makes them a lot easier to read.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Increased 
+        typographic control is also possible, including text-borders, line-height, 
+        margin setting, setting absolute positions of items and so on.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>The Negatives</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Despite the 
+        existence of Style sheets since 1996 browser support is still very patchy. 
+        The only completely compliant browser in Opera 4. Mavigatoe 6 is also 
+        rumoured to be very good. But of the current crop, not even IE 5 observes 
+        all the basics.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Text-size 
+        is notoriously hard to control, and even though you can theoretically 
+        specify point sizes, pixel-heights, and html sizes only pixel sizes are 
+        reliable across all platforms and browsers. Some of the finer points of 
+        control just don't work a lot of the time.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>How it 
+        works</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">There are 
+        two basic ways style sheets work: Redefined html and custom classes. Redefining 
+        html means that you deploy the basic html tags in an 'old-fashioned' way 
+        and then tell the browser how to display this information:</font></p>
+      <blockquote> 
+        <p><code>&lt;html&gt;<br>
+          &lt;head&gt;<br>
+          &lt;title&gt;Style Sheet Example&lt;/title&gt; <br>
+          &lt;style type=&quot;text/css&quot;&gt;<br>
+          &lt;!--<br>
+          body { background-color: #FFFFCC; margin-top: 18px; margin-right: 100px; 
+          margin-left: 100px}<br>
+          p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; 
+          color: #000033; line-height: 150%} <br>
+          h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 
+          20px; font-weight: bold; color: #000033}<br>
+          --&gt;<br>
+          &lt;/style&gt;<br>
+          &lt;/head&gt;</code></p>
+        <p><code>&lt;body bgcolor=&quot;#FFFFFF&quot;&gt;</code></p>
+        <p><code> &lt;h1&gt;This is a normal heading&lt;/h1&gt;<br>
+          &lt;p&gt;This is just paragraph text and shows how the margin for the 
+          whole page is controlled as well as how the line-height has been altered 
+          as well to 150%&lt;/p&gt;<br>
+          &lt;p&gt;This is another paragraph.&lt;/p&gt;</code></p>
+        <p> <code> &lt;/body&gt;<br>
+          &lt;/html&gt;</code></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Specifying 
+        Font and Color Properties</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You specify 
+        font-properties for all the html font-related tag you are altering from 
+        the default:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'font-family' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Unlike 
+          most other CSS1 properties, values are separated by a comma to indicate 
+          that they are alternatives: </font></p>
+        <p><font face="Courier New, Courier, mono"><code>BODY { font-family: gill, 
+          'times new roman', sans-serif } </code></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'font-style' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          normal | italic | oblique </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif"><code><font face="Courier New, Courier, mono">H1, 
+          H2, H3 { font-style: italic }</font></code></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+          </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Using oblique 
+          is not very reliable</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'font-variant' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          normal | small-caps </font></p>
+        <p><font face="Courier New, Courier, mono"><code>H3 { font-variant: small-caps 
+          } </code></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'font-weight' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 
+          | 700 | 800 | 900 </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The 'font-weight' 
+          property selects the weight of the font. The values '100' to '900' form 
+          an ordered sequence, where each number indicates a weight that is at 
+          least as dark as its predecessor. The keyword 'normal' is synonymous 
+          with '400', and 'bold' is synonymous with '700'. Keywords other than 
+          'normal' and 'bold' have been shown to be often confused with font names 
+          and a numerical scale was therefore chosen for the 9-value list.</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif"><code><font face="Courier New, Courier, mono">P 
+          { font-weight: normal }</font></code></font></p>
+        <p><code><font face="Courier New, Courier, mono">H1 { font-weight: 700 
+          }</font></code></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'font-size' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><absolute-size> 
+          absolute (px, pts) relative (ems, %, small | medium | large )</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Using absolute 
+          sizes is officially discouraged, and there is a big problem on the mac 
+          where points are conveted to pixels (so a value of 9 would render text 
+          illegible). The only reliable absolute measure is pixels. Of course 
+          the user can change the size of the text on the page by using the 'text-size' 
+          command, so you will never have total control.</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Relative 
+          sizes suffer from the same faults as normal html text (mac renders only 
+          70% of PC size). Medium is the same as a html size of 3. However the 
+          relative measure can be useful as text-change of other elements will 
+          scale with any user made text sixe changes.<percentage><percentage></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'color' 
+        </b></font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          <color> </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This property 
+          describes the text color of an element (often referred to as the foreground 
+          color). There are different ways to specify red: </font></p>
+        <p><font face="Courier New, Courier, mono"><code>EM { color: red }<br>
+          EM { color: rgb(255,0,0) } <br>
+          Em { color: #00CCC }</code></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'background-color'</b></font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          <color> | transparent</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Applies 
+          to: all elements</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> This property 
+          sets the background color of an element. </font></p>
+        <p><font face="Courier New, Courier, mono"><code>H1 { background-color: 
+          #F00 }</code></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'background-image' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          <url> URL | none </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This property 
+          sets the background image of an element. When setting a background image, 
+          one should also set a background color that will be used when the image 
+          is unavailable. When the image is available, it is overlaid on top of 
+          the background color. </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">B</font><font face="Verdana, Arial, Helvetica, sans-serif"><code><font face="Courier New, Courier, mono">ODY 
+          { background-image: url(background.jpg) }</font></code></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>background-repeat' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          repeat | repeat-x | repeat-y | no-repeat </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> If a background 
+          image is specified, the value of 'background-repeat' determines how/if 
+          the image is repeated. A value of 'repeat' means that the image is repeated 
+          both horizontally and vertically. The 'repeat-x' ('repeat-y') value 
+          makes the image repeat horizontally (vertically), to create a single 
+          band of images from one side to the other. With a value of 'no-repeat', 
+          the image is not repeated. </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif"><code><font face="Courier New, Courier, mono">BODY 
+          { background: red; background-image: </font></code></font><code>url(background.jpg)</code><font face="Verdana, Arial, Helvetica, sans-serif"><code><font face="Courier New, Courier, mono"> 
+          ; background-repeat: repeat-y; }</font></code></font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> In the 
+          example above, the image will only be repeated vertically. </font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'background-attachment' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          scroll | fixed </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Specifies 
+          whether a background image scrolls with the content or remains fixed 
+          in position.</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>The above 
+        style info can be pulled together like this:</b></font></p>
+      <blockquote> 
+        <p><code>&lt;style type=&quot;text/css&quot;&gt;<br>
+          &lt;!--<br>
+          body { background-color: #FFFFCC; margin-top: 18px; margin-right: 100px; 
+          margin-left: 100px}<br>
+          p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: small; 
+          color: #000033; line-height: 150%} <br>
+          h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size:120% 
+          font-weight: bold; color: #000066}<br>
+          --&gt;<br>
+          &lt;/style&gt;</code></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Controlling 
+        further text properties:</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'text-align' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          left | right | center | justify </font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'text-indent' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Use pxs, 
+          % or ems.</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The property 
+          specifies the indentation that appears before the first formatted line. 
+          An indentation is not inserted in the middle of an element that was 
+          broken by another (such as 'BR' in HTML). Example: </font></p>
+        <p><font face="Courier New, Courier, mono"><code>P { text-indent: 3em 
+          }</code></font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>'line-height' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value use 
+          % or ems</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The property 
+          sets the distance between two adjacent lines' baselines. </font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'text-transform' 
+        </b> </font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          capitalize | uppercase | lowercase | none </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">'capitalize' 
+          uppercases the first character of each word 'uppercase' uppercases all 
+          letters of the element 'lowercase' lowercases all letters of the element 
+          'none' neutralizes inherited value. </font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <b>'text-decoration' 
+        </b></font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Value: 
+          none | [ underline || overline || line-through || blink ] </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This property 
+          describes decorations that are added to the text of an element. If the 
+          element has no text (e.g. the 'IMG' element in HTML) or is an empty 
+          element (e.g. ''), this property has no effect. A value of 'blink' causes 
+          the text to blink. </font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Next topic: 
+          <a href="ht_6_css_2.htm">Cascading Style Sheets borders, margins and 
+          positioning.</a></font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="jacascript:history.back(1)">&lt;&lt; 
+          Back </a></font></p>
+      </blockquote>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

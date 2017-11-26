@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+h1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24pt; font-weight: bold; color: #000000}
+a {  text-decoration: underline}
+-->
+</style>
+  <script language="JavaScript">
+<!--
+function KBCenterDiv(NNRef, IERef, ifWidth, ifHeight, forev) {
+// Copyright (c) 1998 by Kevin Bartz. All rights reserved. This site has been enhanced by Kevin Bartz's own original highlighter! Mail him at kevinbartz@geocities.com! This line must remain in the script.
+IE4=(document.all)?1:0
+NN4=(document.layers)?1:0
+if (NN4) {
+theLay=eval(NNRef)
+if (ifWidth) {
+theLay.left=innerWidth/2-theLay.clip.width/2
+}
+if (ifHeight) {
+theLay.top=innerHeight/2-theLay.clip.height/2
+}
+}
+if (IE4) {
+theDiv=eval(IERef)
+if (ifWidth) {
+theDiv.style.left=document.body.offsetWidth/2-theDiv.offsetWidth/2
+}
+if (ifHeight) {
+theDiv.style.top=document.body.offsetHeight/2-theDiv.offsetHeight/2
+}
+}
+if (forev) {
+setTimeout('KBCenterDiv("'+NNRef+'","'+IERef+'",'+ifWidth+","+ifHeight+","+forev+")",10)
+}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFE1FF" text="#000000" onLoad="KBCenterDiv('document.layers[\'Layer1\']','document.all[\'Layer1\']',true,true,true)" link="#000000" vlink="#000000">
+<div id="Layer1" style="position:absolute; left:11px; top:39px; width:47px; height:51px; z-index:1"> 
+  <h1><a href="../words/himself.htm">he</a></h1>
+</div>
+</body>
+</html>

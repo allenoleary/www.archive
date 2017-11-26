@@ -1,0 +1,200 @@
+<style type="text/css">
+<!--
+h3  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+	color : #FF6600;
+	letter-spacing : .25em;
+	margin-left : 5px;
+	margin-top : 0px;
+	margin-right : 0px;
+	margin-bottom : 0px;
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 5px;
+	padding-left : 0px;
+}
+
+h5  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : bold;
+	color : #000000;
+	margin-left : 5px;
+	margin-top : 12px;
+	margin-right : 0px;
+	margin-bottom : 5px;
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	height : 20px;
+}
+
+p  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	line-height : 14px;
+	color : #000000;
+	margin-left : 5px;
+	margin-top : 0px;
+	margin-right : 5px;
+	margin-bottom : 0px;
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 5px;
+	padding-left : 0px;
+}
+
+.button  {
+	"font-family : Verdana, Arial, Helvetica;
+	font-size : 11px;
+	width : 135px;
+	color : #FFFFFF;
+	background-color : #666666;
+	border-color : #000000;
+	border : 1px solid #FFFFFF;
+	" size="20"
+}
+
+body  {
+	background-attachment : fixed;
+	background-repeat : no-repeat;
+	margin-top : 60px;
+	margin-bottom : 20px;
+	margin-left : 50px;
+}
+
+.resume  {
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	border : 1px #666666 dashed;
+}
+.topofall  {
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	left: 120px;
+	top : 0px;
+	position : absolute;
+	background-color : #FFFFFF;
+}
+
+.news1  {
+	left: 120px;
+	padding-top : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	background-color : #FFFFFF;
+}
+
+.news2  {
+	left: 120px;
+	padding-top : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	background-color : #FFFFFF;
+}
+
+.news3  {
+	left: 120px;
+	padding-top : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	background-color : #FFFFFF;
+}
+
+.top_menu  {
+	left: 120px;
+	padding-top : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	background-color : #FFFFFF;
+}
+
+.page  {
+	left: 120px;
+	padding-top : 5px;
+	padding-right : 20px;
+	padding-bottom : 5px;
+	padding-left : 20px;
+	border : 1px #666666 dashed;
+	background-color : #FFFFFF;
+}
+
+.more_news  {
+	padding-top : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	background-color : #FFFFFF;
+}
+
+.zero_margin  {
+	margin-top : 0px;
+	margin-right : 0px;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 5px;
+	padding-left : 0px;
+}
+
+.date  {
+	color : #FF6600;
+}
+
+a:link  {
+	font-weight : bold;
+	color : #FF6600;
+	text-decoration : none;
+}
+
+a:visited  {
+	font-weight : bold;
+	text-decoration : none;
+	color : #FF6600;
+}
+
+a:hover  {
+	text-decoration : line-through;
+}
+.h5 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FF6600;margin-top: 15px; letter-spacing : .25em;}
+
+
+-->
+</style>
+ul  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	line-height : 12px;
+	color : #000000;
+	list-style-position : outside;
+	list-style-type : square;
+}
+
+ul  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	line-height : 12px;
+	color : #000000;
+	list-style-position : outside;
+	list-style-type : square;
+	margin-top : 5px;
+}
+
+.button  {}
+

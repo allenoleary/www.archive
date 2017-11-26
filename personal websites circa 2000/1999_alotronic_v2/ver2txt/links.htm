@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmins="http://www.w3c.org/1999/xhtm" xml:lang="en" lang="en">
+
+<head>
+<title>alotronic, latest news (text ver 2.2)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="ver2text.css">
+
+<meta name="keywords" content="alotronic, Alotronic, allen o'leary, Allen O'Leary">
+<meta name="description" content="Welcome to the latest text-only version of alotronics personal home page. This version has been specifically designed for fast access and/or users who may be using an alternative browser for disability reasons. Here you will find his web works, a history of his writing and a brief decription of his research interests. There is also a Resume and a brief but top-quality links section.">
+
+</head>
+
+<body>
+
+<h1>alotronic: links</h1>
+
+<p>Just a few from each section... <a href="mailto:alotronic@netspace.net.au">email 
+  me a suggestion if you want to.</a></p>
+<p><a href="#top">Top Sites:</a> just great looking or very clever sites<br />
+  <a href="#html">Html, asp, cfml:</a> the top techs for building sites<br />
+  <b><a href="#flash">Flash:</a></b><a href="#flash"> </a>good uses and resources<br />
+  <a href="#art">Art:</a> for or by the web<br />
+  <a href="#cybertexts">Cybertexts: </a>sites with a literary bent<br />
+  <a href="#academic">Academic:</a> scholars and resources<br />
+  <a href="#architectural">Architectural:</a> sites of architects or groups<br />
+  <a href="#theatre">Theatre:</a> specifically theatre sites with a cyberculture 
+  focus</p>
+<p> 
+  <script>
+<!-- hide this script from non-JavaScript browsers
+
+// All code in this script is Copyright(C) 1996, Justin Boyan, jab+j@cs.cmu.edu
+// For documentation and more info, see:  http://www.cs.cmu.edu/~jab/snark/
+// This is SNARK Version 0.2, 26 Jan 1996
+
+var MAX_ENGINES = 30;
+var SNARK_STRING = "hunting+the+snark";
+
+function MakeArray(n) {
+   for (var i = 1; i <= n; i++) {
+     this[i] = 0;
+   }
+   this.maxlen = n;
+   this.len = 0;
+   return this;
+}
+
+var engs = new MakeArray(MAX_ENGINES);
+
+function find_substring(needle, haystack) {
+   var i, needlen = needle.length, haylen = haystack.length;
+   for (i=0; i<=haylen-needlen; i++) {
+      if (needle == haystack.substring(i,i+needlen))
+        return i;
+   }
+   return false;
+}
+
+function Engine(name, opts, home, search) {
+  var snark = find_substring(SNARK_STRING, search);
+  this.name = name;
+  this.opts = opts;
+  this.home = home;
+  this.pre_snark = search.substring(0,snark);
+  this.post_snark= search.substring(snark+SNARK_STRING.length, search.length);
+}
+
+function Add(name, opts, home, search) {
+  engs.len++;
+  if (engs.len <= engs.maxlen) {
+    engs[engs.len] = new Engine(name, opts, home, search)
+  }
+  else {
+    alert("Better increase MAX_ENGINES: " + engs.len + ">" + engs.maxlen)
+  }
+}
+
+// ADD YOUR OWN SEARCH ENGINES BELOW.  (See http://www.cs.cmu.edu/~jab/snark/ )
+
+Add("the Web: Dogpile", "",
+   "http://www.dogpile.com/",
+   "http://rover.dogpile.com/texis/search?q=hunting+the+snark&fs=web&to=thirty" );
+
+Add("the Web for images", "",
+   "http://image.altavista.com/cgi-bin/avncgi",
+   "http://image.altavista.com/cgi-bin/avncgi?do=3&verb=no&oshape=n&oonepp=1&oorder=&ophoto=1&ocolor=1&stype=simage&oprem=0&query=hunting+the+snark&search=Search" );
+
+Add("the Web: AltaVista", "",
+   "http://altavista.digital.com/",
+   "http://altavista.digital.com/cgi-bin/query?pg=q&what=web&fmt=d&q=hunting+the+snark" );
+
+Add("the Web: Lycos", "",
+   "http://www.lycos.com/",
+   "http://lycos.com/cgi-bin/pursuit?query=hunting+the+snark" );
+
+Add("the Web: Yahoo", "",
+   "http://www.yahoo.com/",
+   "http://search.yahoo.com/bin/search?p=hunting+the+snark" );
+
+Add("the Web: Google", "SELECTED",
+   "http://www.google.com/",
+   "http://www.google.com/search?q=hunting+the+snark" );
+
+
+// ADD YOUR OWN SEARCH ENGINES ABOVE.  (See http://www.cs.cmu.edu/~jab/snark/ )
+
+function HandleForm(form) {
+  form.submit();  // This fixes a Netscape 2.0b6a bug. How, I don't understand.
+
+  var i, oldq=form.query.value, newq="";
+  for (i=0; i<oldq.length; i++) {  // compress [ ]+ into \+
+    var thischar = oldq.charAt(i);
+    if (thischar != ' ')
+      newq += thischar;
+    else if (lastchar != ' ')
+      newq += '+';
+    lastchar = thischar;
+  }
+  var eng = engs[1+form.service.selectedIndex];
+  location.href = newq ? eng.pre_snark + newq + eng.post_snark : eng.home;
+}
+
+function DisplayForm() {
+  document.writeln('<FORM OnSubmit="HandleForm(this); return false">');
+  document.writeln('<p>Search <SELECT name="service">');
+  for (i=1; i <= engs.len; i++) {
+    document.writeln("<OPTION " + engs[i].opts + "> " + engs[i].name);
+  }
+  document.writeln('</SELECT> for <INPUT size=26 name="query">');
+  document.writeln('<input type=submit value=" GO!">');
+  document.writeln('</FORM></P>');
+}
+
+DisplayForm();
+
+// done hiding from old browsers -->
+
+</script>
+</p>
+<p>(download this handy <a href="search_form.txt">search script...</a> written 
+  by Justin Boyan)</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="top" location="top"></a>Top Sites</h3>
+<p>McSpotlight - <a href="http://www.mcspotlight.org/" target="_blank">http://www.mcspotlight.org/</a><br />
+  This is as close as I get to being a political radical... Extremely well-resourced 
+  and factual site about the horror that calls itself Mc Donalds. </p>
+<p>Design is Kinky - <a href="http://www.designiskinky.net/" target="_blank">http://www.designiskinky.net/</a><br>
+  This is a design site with a large number of links, all to web designers homepages. 
+  And not just boring big-guys, but lots of quirky smaller players.</p>
+<p>Vir2l - <a href="http://www.vir2l.com" target="_blank">http://www.vir2l.com</a><br>
+  Vir2l is a webdesign firm with a solid pedigree from MIT and their imaging is 
+  fantastic.</p>
+<p>The Remedi Project - <a href="http://www.theremediproject.com/" target="_blank">http://www.theremediproject.com</a><br>
+  A leading spot to keep an eye on web based multimedia and changing and challenging 
+  flash interfaces</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="html" location="html"></a>Html, asp, cfml</h3>
+<p>Webmonkey - <a href="http://www.webmonkey.com" target="_blank">http://www.webmonkey.com</a><br />
+  Always top of the tops for a quick intro to any web topic. Excellent intro to 
+  cfml as well.</p>
+<p>Webreview - <a href="http://www.webreview.com" target="_blank">http://www.webreview.com</a><br />
+  Sometimes more in depth than webmonkey. Particularly good on style sheets.</p>
+<p>ASP today - <a href="http://www.asptoday.com" target="_blank">http://www.asptoday.com</a><br />
+  This is the only ASP site I visit because it has good beginners essays and scripts 
+  to steal.</p>
+<p>Webreference - <a href="http://www.webreference.com/" target="_blank">http://www.webreference.com/</a><br>
+  Another excellent web resource with many articles.</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="flash" location="flash"></a>Flash</h3>
+<p><a href="http://www.devdesign.com/flash/" target="_blank">http://www.devdesign.com/flash/</a><br>
+  A flash discussion group, you have to follow your nose, but there's some good 
+  tips and tricks in there.</p>
+<p><a href="http://www.flashcentral.com/" target="_blank">http://www.flashcentral.com/</a><br>
+  Tutorials and news.</p>
+<p><a href="http://www.flashcentral.com/tech" target="_blank">http://www.flashcentral.com/tech</a><br>
+  Same sitemakers as above, but with an emphasis on advanced flash development 
+  and programming.</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="art" location="art"></a>Art</h3>
+<p>rhizome - <a href="http://www.rhizome.org" target="_blank">http://www.rhizome.org</a><br />
+  A good resource for keeping in touch with web art and writing from around the 
+  globe. Good email newsletter as well.</p>
+<p>adaweb - <a href="http://www.adaweb.com" target="_blank">http://www.adaweb.com</a><br />
+  A large repository of works for the web, with features. Not as good as it used 
+  to be...</p>
+<p>Web Gallery of Art - <a href="http://www.kfki.hu/%7Earthp/" target="_blank">http://www.kfki.hu/~arthp/</a><br />
+  While there are plenty of art resources on the Internet, this one is breathtakingly 
+  vast and comprehensive: just about anything by anyone from the Italian Renaissance 
+  and Baroque periods.</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="cybertexts" location="cybertexts"></a>Cybertexts</h3>
+<p>Grammatron - <a href="http://www.grammatron.com" target="_blank">http://www.grammatron.com</a><br>
+  Mark Americas Seminal hypertext.</p>
+<p>Critical Art Emsemble - <a href="http://www.critical-art.net/" target="_blank">http://www.critical-art.net/</a><br>
+  Critical Art Emsemble make web works and perfromances that critique cyber culture</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="academic" location="academic"></a>Academic</h3>
+<p>Gregory Ulmer - <br />
+  Site for this Miama based academic of writing processes for 'electracy'. Includes 
+  plenty to keep you thinking about how we might write for and by the network.</p>
+<p>Electronic Writing at Swinburne University - <a href="http://www.swinburne.infoxchange.net.au/media/halm316/links.htm" target="_blank">http://www.swinburne.infoxchange.net.au/media/halm316/links.htm</a><br>
+  I help tutor this course, and the website by Lisa Gye has very good links to 
+  academic sites relevant to electronic writing - there's no point in repeating 
+  them here...</p>
+<p> Ted Nelsons Homepage - <a href="http://www.sfc.keio.ac.jp/%7Eted/" target="_blank">http://www.sfc.keio.ac.jp/~ted/</a><br>
+  Ted Nelsons Homepage at his current post at Keio University, Japan.</p>
+<p>Deleuze and Guatarri on the Web - <a href="http://www.uta.edu/english/apt/d&amp;g/d&amp;gweb.html" target="_blank">http://www.uta.edu/english/apt/d&g/d&gweb.html</a><br>
+  A great kick-off point to study their works and ideas.</p>
+<p>MediaMoo - <a href="http://www.cc.gatech.edu/fac/Amy.Bruckman/MediaMOO/" target="_blank">http://www.cc.gatech.edu/fac/Amy.Bruckman/MediaMOO/</a><br>
+  MediaMoo is a media related MOO hosted by the MIT Media Lab.</p>
+<p>The Postmodern Generator - <a href="http://www.csse.monash.edu.au/community/postmodern.html" target="_blank">http://www.csse.monash.edu.au/community/postmodern.html</a><br>
+  The Postmodern Generator is a nice spoof on academic prose.</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="architectural" location="architectural"></a>Architectural</h3>
+<p>Bernard Tschumi - <a href="http://www.tschumi.com" target="_blank">http://www.tschumi.com</a><br />
+  Official website for this Architect. Not a great looking site, but good essays 
+  and pics of his work.</p>
+<p>Coop Himmelblau - <a href="http://www.coop-himmelblau.at/">http://www.coop-himmelblau.at/</a><br />
+  Good site for this excellent practice. Some great stage designs here too...</p>
+<p>Archinect - <a href="http://www.archinect.com" target="_blank">http://www.archinect.com</a><br />
+  Very good site to keep in touch with whats on the web for architecture. They 
+  include a lot of experimental work, some just for the web, and update regularly.</p>
+<p>Parc De Villette - <a href="http://www.la-villette.com/" target="_blank">http://www.la-villette.com/</a><br>
+  Here's the official website for my curretn favourite Architectural project, 
+  the collaboration between Eisenmann and Derrida.</p>
+<hr width="100%" size="1" noshade />
+<h3><a name="theatre" location="theatre"></a>Theatre</h3>
+<p>dv8 - <a href="http://www.dv8.co.uk/index.html" target="_blank">http://www.dv8.co.uk/index.html</a><br />
+  Site for this well known British company. useful for production history and 
+  that's about it.</p>
+<p>dance technology zone - <a href="http://art.net/%7Edtz/" target="_blank">http://art.net/~dtz/</a><br />
+  This is the best performance technology site on the web. Lots to get you going, 
+  great links, essays...</p>
+<p>pantheatre - <a href="http://www.pantheatre.com/" target="_blank">http://www.pantheatre.com/</a><br />
+  Visually terrible, but some interesting essays on the methods of pan theatre, 
+  Enrique Pardaus unique take on performance and creation.</p>
+<p>Robert Wilson - <a href="http://www.robertwilson.com/index.html" target="_blank">http://www.robertwilson.com/index.html</a><br>
+  Home page of Robert Wilson, having news, projects and sketches.<br>
+  <br>
+</p>
+<div title="navigation bar" class="nav"> <a href="home.htm" title="go back to alotronics home page" accesskey="h"> 
+  home</a> | <a href="gallery.htm" title="go to a collection of alotronics web works" accesskey="g">gallery</a> 
+  | <a href="cv.htm" title="go to alotronics work history" accesskey="c">cv</a> 
+  | <a href="links.htm" title="go to a collection of related web pages" accesskey="l">links</a> 
+  |<a href="latest.htm" title="go to latest news" accesskey="n">news</a> | <a href="writing.htm" title="go to a history of alotronics playwriting" accesskey="w">writing</a> 
+  | <a href="research.htm" title="go to alotronics research interests" accesskey="r">research</a><br />
+  <a href="sitemap.htm" title="go to a map of this site" accesskey="m">map</a> 
+  | <a href="notes.htm" title="go to a descriptions of features of this site" accesskey="s">site 
+  notes</a> | <a href="mailto:alotronic@netspace.net.au" title="email link to alotronic for comments" accesskey="e">email</a> 
+  <br />
+  (if you can use accesskey, please use first letter of link 
+  as shortcut)<br />
+</div>
+</body>
+</html>

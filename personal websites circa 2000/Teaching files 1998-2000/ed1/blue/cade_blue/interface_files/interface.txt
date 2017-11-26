@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>index.htm</title>
+</head>
+<body background="big sky.gif" text="000000">
+<table height="10px" width="10px" align="center">
+<tr>
+<td align="center"><a href=.../index.htm">B</a></td>
+</tr>
+</table> 
+</body>
+</html>

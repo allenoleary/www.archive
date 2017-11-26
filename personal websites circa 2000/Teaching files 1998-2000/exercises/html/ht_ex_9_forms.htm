@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td height="61"> 
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>HTML Exercise: 
+	Forms</b></font></p>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Format and Publish 
+	to the Server a Fake User Information and Feedback Form for an imaginary 
+	company, service or organisation using each of the form elements we've 
+	just discussed:</font></p>
+      <ul>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Textbox</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Textarea</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Password</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">A group of 
+	  CheckBoxs</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">A group of 
+	  Radio Buttons</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">List Box</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">A Submit 
+	  and Reset Button</font></li>
+	<li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Set Action 
+	  to an imaginary URL and Method to Post</font></li>
+      </ul>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">It might look 
+	something like this:</font></p>
+      <table width="75%" border="1" cellspacing="0" cellpadding="5" bgcolor="#FFFFCC" align="center">
+	<tr> 
+	  <td colspan="2"> 
+	    <p>Thankyou for signing up for our email newsletter, The Carrot. Please 
+	      confirm your Login, Password and email address.</p>
+	    <p>You can help us pretend to tailor our newsletter better by adding 
+	      additional information for our records:</p>
+	  </td>
+	</tr>
+
+	<form action="http://www.carrot.com/hassle_user.cfm" actions="POST">
+
+	<tr> 
+	  <td> 
+	    <div align="right">Login</div>
+	  </td>
+	  <td> 
+	    <input type="text" name="login" size="35" value="user name">
+	  </td>
+	</tr>
+	<tr> 
+	  <td> 
+	    <div align="right">Email</div>
+	  </td>
+	  <td> 
+	    <input type="text" name="email" size="35" value="ie: me@mine.com">
+	  </td>
+	</tr>
+	<tr> 
+	  <td height="45"> 
+	      <div align="right">Password (8-12 char)</div>
+	  </td>
+	  <td height="45"> 
+	      <input type="password" name="password" size="12" maxlength="12">
+	  </td>
+	</tr>
+	<tr> 
+	  <td> 
+	    <div align="right">Sexual Orientation</div>
+	  </td>
+	  <td> 
+	    <input type="radio" name="sex" value="dull">
+	    Straight <br>
+	    <input type="radio" name="sex" value="ho">
+	    Bent<br>
+	    <input type="radio" name="sex" value="bi">
+	    Bi </td>
+	</tr>
+	<tr> 
+	  <td> 
+	    <div align="right">Income</div>
+	  </td>
+	  <td> 
+	    <input type="radio" name="income" value="poor">
+	    Below 5000 pa<br>
+	    <input type="radio" name="income" value="too mich">
+	    5000 to 60,000 pa<br>
+	      <input type="radio" name="income" value="reject-too busy" checked>
+	    Over 60,000 pa</td>
+	</tr>
+	<tr> 
+	  <td> 
+	    <div align="right">Interests </div>
+	  </td>
+	  <td> 
+	      <input type="checkbox" name="egotist">
+	    Myself<br>
+	      <input type="checkbox" name="altruist" checked>
+	    The good of others<br>
+	      <input type="checkbox" name="greedy">
+	    Other Peoples Money<br>
+	      <input type="checkbox" name="saint">
+	    Prayer<br>
+	      <input type="checkbox" name="one of us">
+	    Taxidermy </td>
+	</tr>
+	<tr> 
+	  <td> 
+	    <div align="right">State</div>
+	  </td>
+	  <td> 
+	    <select name="select">
+		<option value="cool" selected>VIC</option>
+		<option value="liar">NSW</option>
+		<option value="working">Intoxicated</option>
+		<option value="normal">Depressed</option>
+		<option value="hyper">Pumped Up</option>
+		<option value="happy">Happy</option>
+		<option value="dead">In State</option>
+	      </select>
+	  </td>
+	</tr>
+	<tr> 
+	  <td colspan="2"> 
+	      <p>Please feel free to add any comments so we can improve our service:
+		<textarea name="comment" cols="70" rows="5">Your service would be improved
+if you got out of my face 
+and just sent me
+the phreakin newsletter thanks...</textarea>
+	      </p>
+	    </td>
+	</tr>
+	<tr> 
+
+	
+	  <td>&nbsp; </td>
+	  <td> 
+	    <input type="submit" name="Submit" value="Submit">
+	    <input type="reset" name="Reset" value="Clear">
+	  </td>
+	</tr>
+
+
+	</form>
+
+      </table>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><a href="javascript:history.back(1)">&lt;&lt; 
+	Back</a></font></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

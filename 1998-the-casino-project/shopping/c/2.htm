@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<html>
+<head>
+<title>shop_starter</title>
+
+
+<script language="javaScript">
+
+function flicker(){
+
+for (count=0; count < 100; count++){
+    document.bgColor = "black";
+	setTimeout("nothing()", 5000);
+	document.bgColor = "white";
+	setTimeout("nothing()", 5000);
+	}
+}
+	
+
+</script>
+  <script language="JavaScript">
+<!--
+function YY_Layerfx(yyleft,yytop,yyfnx,yyfny,yydiv,yybilder,yyloop,yyto,yycnt,yystep) { //v1.2
+//copyright (c)1998 Yaromat, Jaro von Flocken
+ if ((document.layers)||(document.all)){
+  eval("myfunc=yyfnx.replace(/x/gi, yycnt)");
+  with (Math) {yynextx= eval(myfunc)}
+  eval("myfunc=yyfny.replace(/x/gi, yycnt)");
+  with (Math) {yynexty= eval(myfunc)}
+  yycnt=(yyloop && yycnt>=yystep*yybilder)?0:yycnt+yystep;
+  if (document.layers){
+    eval(yydiv+".top="+(yynexty+yytop))
+    eval(yydiv+".left="+(yynextx+yyleft))
+  }
+  if (document.all){
+    eval("yydiv=yydiv.replace(/.layers/gi, '.all')");
+    eval(yydiv+".style.pixelTop="+(yynexty+yytop));
+    eval(yydiv+".style.pixelLeft="+(yynextx+yyleft));
+  }
+  argStr='YY_Layerfx('+yyleft+','+yytop+',"'+yyfnx+'","'+yyfny+'","'+yydiv+'",'+yybilder+','+yyloop+','+yyto+','+yycnt+','+yystep+')';
+  if (yycnt<=yystep*yybilder){eval(yydiv+".yyto=setTimeout(argStr,yyto)");}
+ }
+
+}
+//-->
+</script>
+  <script language="JavaScript">
+<!--
+function YY_Mousetrace(evnt) { //v1.2 copyright (c)1998 Yaro von Flocken
+ if (yyns4)
+  {if (evnt.pageX) {yy_ml=evnt.pageX;  yy_mt=evnt.pageY;}  }
+ else{
+   yy_ml=(event.clientX + document.body.scrollLeft);
+   yy_mt=(event.clientY + document.body.scrollTop);
+ }
+ if (yy_tracescript)eval(yy_tracescript)
+}
+//-->
+</script>
+</head>
+<body bgcolor="#000000" text="White" link="White" vlink="White" alink="White" leftmargin=0 topmargin=0 onLoad="YY_Mousetrace('',',document.YY_Mousetrace1')" >
+<!-- #BeginBehavior YY_Mousetrace1 --> 
+<script language='JavaScript'>
+<!--
+var yyns4=window.Event?true:false; var yy_mt = 0; var yy_ml = 0;
+if (yyns4) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = YY_Mousetrace;
+yy_tracescript = '';
+//-->
+</script>
+<!-- #EndBehavior YY_Mousetrace1 --> 
+<div id="Layer1" style="position:absolute; left:3px; top:4px; width:169px; height:165px; z-index:1"><a href="#" onMouseOver="YY_Layerfx(0,0,'yy_ml+cos\(\(20*sin\(x/20\)\)+70\)*150*\(sin\(10+x/10\)+0.2\)*cos\(x/10\)','yy_mt+sin\(\(20*sin\(x/20\)\)+70\)*150*\(sin\(10+x/10\)+0.2\)*cos\(x/10\)','document.layers[\'Layer1\']',2000,false,80,0,1)"><img src="../shop_images/hands.jpg" width="114" height="114" border="0"></a></div>

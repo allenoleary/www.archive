@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>HTML Forms</b></font></p>
+      <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Forms are a 
+	way to collect informaiton from a user. This could be just about anything 
+	you can type, for any reason. It's common to use forms to enable site 
+	searches, collect passwords, pay bills and so on. Forms have even been 
+	used...</font></p>
+      <form method="post" action="">
+	<select name="select">
+	  <option>&gt;&gt;</option>
+	  <option>as an intriguing way </option>
+	  <option>of adding</option>
+	  <option>more contextual information</option>
+	  <option>or even writing little poems -</option>
+	  <option>+</option>
+	  <option>roses are red</option>
+	  <option>violets are blue</option>
+	  <option>when i think of you</option>
+	  <option>i just wanna spew</option>
+	</select>
+      </form>
+    </td>
+  </tr>
+</table>
+<p><b><font face="Verdana, Arial, sans-serif, Tahoma" size="2">There are several 
+  types of form elements:</font></b></p>
+<form method="post" action="">
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma"> <font size="2">
+    <input type="text" name="textfield">
+    the text field, single line</font></font></p>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <input type="text" name="textfield2">
+    the password field (go on type something into it...)</font></p>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <textarea name="textfield3" rows="5"></textarea>
+    the multi-line text box </font></p>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <select name="select2">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+    </select>
+    the select-menu field (one line displayed, one selection only)</font></p>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <input type="checkbox" name="checkbox" value="checkbox" checked>
+    <input type="checkbox" name="checkbox2" value="checkbox">
+    <input type="checkbox" name="checkbox3" value="checkbox">
+    the checkbox field (multiple yes/no's allowed)</font></p>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <input type="radio" name="radiobutton" value="radiobutton" checked>
+    <input type="radio" name="radiobutton" value="radiobutton">
+    <input type="radio" name="radiobutton" value="radiobutton">
+    the radio button field (one only selected at a time)</font></p>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <input type="submit" name="Submit" value="Submit">
+    <input type="reset" name="Submit2" value="Reset">
+    the Submit and Reset buttons (click the reset to clear all entries)</font></p>
+</form>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">All of the above fields 
+  are kept in one &lt;form&gt; &lt;/form&gt; tag pair. Everything in a &lt;form&gt;&lt;/form&gt; 
+  tag is alogical group, that is if this were information to be sent to the server, 
+  it would all be sent as one group. It doesn't matter how much much or how little 
+  information or formatting is inside a form tag, the useage is just about how 
+  much information you want to gather at once. The &lt;form&gt; tag accepts no 
+  formatting attributes.</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>The &lt;form&gt; 
+  tag.</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The form tag only 
+  accepts two useful attribute - the first is &lt;form <b>action</b>=&quot;http://www.search.com/find.cgi&quot;&gt;. 
+  The value here is a program on the server that will do something useful (like 
+  add you to a mailing list or database).</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The second is &lt;form 
+  action=&quot;http://www.search.com/find.cgi&quot; <b>method</b>=&quot;post&quot;&gt;. 
+  Post and Get are the only two values accepted. Post is more common, it sends 
+  a data stream to the server, where Get sends a url with an attached string, 
+  (like http://www.search.com/find.cgi?alotronic) which is processed by the server. 
+  This is common more common with search engines than other applications (have 
+  a look at a search string from looksmart for instance) because they can be bookmarked 
+  by the browser.</font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>The input elements</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Input elements define 
+  the fields, what gets displayed and also what name/value pair is sent to the 
+  server. Name/Value pairs are the name and value of the variable that gets sent 
+  to the server. Again, have a look at looksmart to see how name/value paris are 
+  encoded when sent (with an &amp; between name/value pairs). </font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Textbox</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The name and value 
+  attributes are shared by all form elements, but getting information abot what 
+  is actually selected is different for some of the input elements. The basic 
+  textbox input field looks like this:</font></p>
+<blockquote>
+  <p><code>&lt;input type=text name=country size=20&gt;</code></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">In a working form 
+  it would work like this:</font></p>
+<blockquote>
+  <p><code>&lt;form action=&quot;http://www.search.com/find.cgi&quot; method=&quot;get&quot;&gt;</code></p>
+  <p><code>&lt;p&gt;search for &lt;input type=text name=search size=20&gt;<br>
+    &lt;p&gt;in what country ?&lt;input type=text name=country size=20&gt;</code></p>
+  <p><code>&lt;p&gt;&lt;input type=submit&gt;</code></p>
+  <p><code>&lt;/form&gt;</code></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">this gives you:</font></p>
+<form action="http://www.search.com/find.cgi" method="get">
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">search for 
+    <input type=text name=search size=20>
+    </font>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">in what country 
+    ? 
+    <input type=text name=country size=20>
+    </font>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+    <input type=submit>
+    </font>
+</form>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">This would send an 
+  encoded URL to the server which would look something like this: http://www.search.com/find.cgi??search=alotronic&amp;country=australia.</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Note that the size 
+  attribute is how many characters will display, but the user can enter any length 
+  of string that they want.</font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>TextArea</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Gives you larger boxes 
+  over multiple lines for more inout that would be comfortable with a textbox.</font></p>
+<blockquote>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;TEXTAREA ROWS=&quot;4&quot; 
+    COLS=&quot;40&quot;&gt;<br>
+    &lt;/TEXTAREA&gt;</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">This will give you 
+  a textarea 4 rows by 20 columns of charcters (depending on the browser default):</font></p>
+<p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+  <textarea rows="4" cols="40" name="textarea">
+    
+  </textarea>
+  </font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You can add default 
+  text to a textbox, which can be edited by the user:</font></p>
+<blockquote>
+  <p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;TEXTAREA ROWS=&quot;4&quot; 
+    COLS=&quot;40&quot;&gt;<br>
+    Enter a complete description of your problem.</font></p>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"> Please include 
+    a phone number where you can be<br>
+    reached for more information if necessary.<br>
+    &lt;/TEXTAREA&gt;</font></p>
+</blockquote>
+<p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+  <textarea rows="4" cols="40" name="textarea">
+     Enter a complete description of your problem.
+
+     Please include a phone number where you can be
+     reached for more information if necessary.
+  </textarea>
+  </font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Password</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><code>&lt;input type=password 
+  name=secret size=15&gt;</code></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Works exactly the 
+  same way as <b>textbox</b>, but adds the * to keep your entry private. </font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>CheckBox</b></font></p>
+<p><code>&lt;input type=checkbox name=&quot;check&quot; value=&quot;yes&quot; 
+  checked&gt;</code></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">This information is 
+  only sent to the server if the element is checked. You use the checked attribute 
+  to set the checkbox to be selected when the page loads. You must supply a name 
+  and a value for this element.</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Any number of checkboxes 
+  can be selected at once, but if you want to send several bits of information 
+  at once, you make the name attribute the same, but alter the values:</font></p>
+<blockquote>
+  <p><code>&lt;P&gt;Which pets do you own?<br>
+    &lt;P&gt;</code></p>
+  <p> <code>&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;pets&quot; VALUE=&quot;dog&quot; 
+    checked&gt; Dog<br>
+    &lt;BR&gt;<br>
+    &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;pets&quot; VALUE=&quot;cat&quot;&gt; 
+    Cat<br>
+    &lt;BR&gt;<br>
+    &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;pets&quot; VALUE=&quot;fish&quot;&gt; 
+    Fish<br>
+    &lt;BR&gt;<br>
+    &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;pets&quot; VALUE=&quot;other&quot;&gt; 
+    Other </code></p>
+  <p><code>&lt;/P&gt; </code></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Gives this:</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Which pets do you 
+  own? </font>
+<p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+  <input type="checkbox" name="pets" value="dog" checked>
+  Dog <br>
+  <input type="checkbox" name="pets" value="cat">
+  Cat <br>
+  <input type="checkbox" name="pets" value="fish">
+  Fish <br>
+  <input type="checkbox" name="pets" value="other">
+  Other </font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Radio Buttons</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Where Checkboxes allow 
+  (and send) multiple options, Radio Buttons will send only one. The basic element 
+  looks like this:</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;INPUT TYPE=&quot;radio&quot; 
+    NAME=&quot;shipping&quot;&gt;</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">But to get them to 
+  work as a group, you have to give them the same name. The value specifies whar 
+  will be sent to the server - just the one that is selected</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;P&gt;How should 
+    we ship your order?<br>
+    &lt;P&gt;<br>
+    &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;shipping&quot; value=&quot;next 
+    day&quot; &gt; Next day air<br>
+    &lt;BR&gt;<br>
+    &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;shipping&quot; value=&quot;second 
+    day&quot; &gt; Second day air<br>
+    &lt;BR&gt;<br>
+    &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;shipping&quot; value=&quot;courier&quot;&gt; 
+    Courier<br>
+    &lt;BR&gt;<br>
+    &lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;shipping&quot; value=&quot;post&quot;&gt; 
+    Parcel post<br>
+    &lt;/P&gt;</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">How should we ship 
+  your order? </font>
+<p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+  <input type="radio" name="shipping" value="next day" >
+  Next day air <br>
+  <input type="radio" name="shipping" value="second day" >
+  Second day air <br>
+  <input type="radio" name="shipping" value="courier">
+  Courier <br>
+  <input type="radio" name="shipping" value="post">
+  Parcel post </font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>The Select field:</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">This is the one that 
+  gives you the basic drop-down list. Again, only the selected option value is 
+  sen tot eh server.</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;SELECT NAME=&quot;shipping&quot;&gt;<br>
+    &lt;OPTION VALUE=&quot;Next AM&quot;&gt;Next day, AM delivery&lt;/OPTION&gt;<br>
+    &lt;OPTION VALUE=&quot;Next PM&quot;&gt;Next day, PM delivery&lt;/OPTION&gt;<br>
+    &lt;OPTION VALUE=&quot;Second&quot;&gt;Second day&lt;/OPTION&gt;<br>
+    &lt;OPTION VALUE=&quot;Parcel&quot;&gt;Parcel post&lt;/OPTION&gt;<br>
+    &lt;/SELECT&gt;</font></p>
+</blockquote>
+<p> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"> 
+  <select name="shipping">
+    <option value="Next AM">Next day, AM delivery 
+    <option value="Next PM">Next day, PM delivery 
+    <option value="Second">Second day 
+    <option value="Parcel">Parcel post 
+  </select>
+  </font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Note that adding the 
+  selected attribute make that option come up in the textbox...</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;SELECT NAME=&quot;shipping&quot;&gt;<br>
+    &lt;OPTION VALUE=&quot;Next AM&quot;&gt;Next day, AM delivery&lt;/OPTION&gt;<br>
+    &lt;OPTION VALUE=&quot;Next PM&quot;&gt;Next day, PM delivery&lt;/OPTION&gt;<br>
+    &lt;OPTION VALUE=&quot;Second&quot; SELECTED&gt;Second day&lt;/OPTION&gt;<br>
+    &lt;OPTION VALUE=&quot;Parcel&quot;&gt;Parcel post&lt;/OPTION&gt;<br>
+    &lt;/SELECT&gt;</font></p>
+</blockquote>
+<p> 
+  <select name="select4">
+    <option value="Next AM">Next day, AM delivery 
+    <option value="Next PM">Next day, PM delivery 
+    <option value="Second" selected>Second day 
+    <option value="Parcel">Parcel post 
+  </select>
+</p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">And finally...</font></p>
+<hr noshade>
+<p><b><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The Submit and 
+  Reset Buttons:</font></b></p>
+<blockquote>
+  <p><code>&lt;input type=&quot;submit&quot; name=&quot;Submit&quot; value=&quot;Submit&quot;&gt;<br>
+    &lt;input type=&quot;reset&quot; name=&quot;Reset&quot; value=&quot;Reset&quot;&gt;</code></p>
+</blockquote>
+<p> 
+  <input type="submit" name="Submit3" value="Submit">
+  <input type="reset" name="Submit22" value="Reset">
+</p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You can change the 
+  text on the buttons by changing the Value.</font></p>
+<blockquote>
+  <p><code>&lt;input type=&quot;submit&quot; name=&quot;Submit&quot; value=&quot;Submit 
+    to My Will!!!&quot;&gt;<br>
+    &lt;input type=&quot;reset&quot; name=&quot;Reset&quot; value=&quot;Reset 
+    my brain &quot;&gt;</code></p>
+</blockquote>
+<p>
+  <input type="submit" name="Submit" value="Submit to My Will!!!">
+  <input type="reset" name="Reset" value="Reset my brain ">
+</p>
+<p><a href="javascript:history.back(1)"><font face="Verdana, Arial, sans-serif, Tahoma" size="2">&lt;&lt; 
+  Back </font></a></p>
+</body>
+</html>

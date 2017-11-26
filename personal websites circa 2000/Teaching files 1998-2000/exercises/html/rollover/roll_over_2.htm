@@ -1,0 +1,45 @@
+<!--To put this html into an existing HTML document, you must copy the JavaScript and-->
+<!--paste it in a specific location within the destination HTML document. You must then copy-->
+<!--and paste the table in a different location.-->
+
+<html>
+
+<head>
+
+<title>roll_over.gif</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Fireworks Splice HTML">
+
+
+<script language="JavaScript">
+<!-- 
+
+if(document.images) {
+loadImages() }
+
+function loadImages () {
+
+this[0]=new image;
+this[0].src="roll_over.gif";
+this[1]=new image;
+this[1].src="roll_over_f2.gif";
+
+}
+
+function flipMe (name, index) {
+
+document.images[index].src=name;
+
+}
+
+// stop hiding -->
+</script>
+
+</head>
+<body bgcolor="#ffffff" onload="">
+<a href="#" onMouseOut="flipMe('roll_over.gif',0)"  onMouseOver="flipMe('roll_over_f2.gif',0)" ><img name="roll_over" src="roll_over.gif" width="150" height="50" border="0"></a> 
+</body>
+
+</html>
+

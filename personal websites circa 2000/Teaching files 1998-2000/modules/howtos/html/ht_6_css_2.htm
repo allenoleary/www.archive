@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Style Sheets 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0" height="1899">
+  <tr> 
+    <td> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Style 
+        Sheets 2: Margins, Borders and Positioning.</b></font></p>
+      <p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The Idea</font></b></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">CSS has a 
+        lot more power to manipulate margins, borders and positioning than plain 
+        html. These declarations are called 'Box properties'.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Margins</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">For instance 
+        on the previous page I used this in the body declaration to control the 
+        page margins:</font></p>
+      <blockquote> 
+        <p><code><font face="Courier New, Courier, mono">margin-top: 20px; margin-right: 
+          100px; margin-left: 100px</font></code> </p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">I could comfortably 
+        use relative measures as well: </font></p>
+      <blockquote> 
+        <p><code><font face="Courier New, Courier, mono">margin-top: 5%; margin-right: 
+          10%; margin-left: 10%</font></code> </p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Because I 
+        put these measures in the body declaration, they will apply to everything 
+        inbetween the &lt;body&gt; tags. There is no reason why I couldn't put 
+        this information into the P or H1 declarations instead, and I could do 
+        this to outdent all H1 headings from paragraph text:</font></p>
+      <blockquote> 
+        <p><code><font face="Courier New, Courier, mono">h1 { margin-left: 75px; 
+          margin-right: 75px}<br>
+          p {margin-left: 100px; margin-right: 100px)</font></code></p>
+      </blockquote>
+      <p>If I declare margins in the body and in the P and H1, they will be added 
+        together because the P and H1 are child elements of the B parent.</p>
+      <p>So margins are used to position content within their parent elements:</p>
+      <p> <b>'margin-top', 'margin-right', 'margin-bottom', 'margin-left'</b></p>
+      <blockquote> 
+        <p>Value</p>
+        <p>These property sets the specified margin of an element: </p>
+      </blockquote>
+      <p><b>'margin' </b></p>
+      <blockquote> 
+        <p>The 'margin' property is a shorthand property for setting 'margin-top', 
+          'margin-right' 'margin-bottom' and 'margin-left' at the same place in 
+          the style sheet. </p>
+      </blockquote>
+      <p><b>Borders and Padding</b></p>
+      <p>Borders and Padding act like table borders in plain html but can be applied 
+        to all elements. Borders are not well supported in all browsers, so you 
+        check them very carefully!</p>
+      <p>Just like in a table you should specify borders as well as padding. Borders 
+        will start where the element margins are. Padding will provide space between 
+        the boders and the content of the element.</p>
+      <p> <b>'border-top-width' 'border-bottom-width' 'border-left-width' 'border-right-width'</b></p>
+      <blockquote> 
+        <p>The width of the keyword values are 'thin' 'medium' 'thick'. </p>
+      </blockquote>
+      <p><b>'border-width' </b></p>
+      <blockquote> 
+        <p>Value:[thin | medium | thick </p>
+        <p>This property is a shorthand property for setting 'border-width-top', 
+          'border-width-right', 'border-width-bottom' and 'border-width-left' 
+          at the same place in the style sheet. </p>
+        <p><font face="Courier New, Courier, mono"><code>H1 { border: solid thick 
+          red } </code></font></p>
+        <p><code><font face="Courier New, Courier, mono">P { border: solid thick 
+          blue } </font></code></p>
+        <p>In the example above, 'H1' and 'P' elements will have the same border 
+          width regardless of font size. To achieve relative widths, the 'em' 
+          unit can be used: </p>
+        <p><font face="Courier New, Courier, mono"><code>H1 { border: solid 0.5em 
+          }</code></font></p>
+      </blockquote>
+      <p><b>'border-color' </b></p>
+      <blockquote> 
+        <p>The 'border-color' property sets the color of the four borders. 'border-color' 
+          can have from one to four values, and the values are set on the different 
+          sides as for 'border-width' above. If no color value is specified, the 
+          value of the 'color' property of the element itself will take its place 
+        </p>
+      </blockquote>
+      <p> <b>'border-style' </b></p>
+      <blockquote>
+        <p>Value: none | dotted | dashed | solid | double | groove | ridge | inset 
+          | outset </p>
+        <p>The 'border-style' property sets the style of the four borders. It 
+          can have from one to four values, and the values are set on the different 
+          sides as for 'border-width' above. </p>
+      </blockquote>
+      <p> <b>'padding-top' 'padding-right' 'padding-bottom' 'padding-left' </b></p>
+      <blockquote> 
+        <p>This property sets the left padding of an element. </p>
+        <p><font face="Courier New, Courier, mono"><code>BLOCKQUOTE { padding-left: 
+          20% } </code></font></p>
+        <p>Padding values cannot be negative. </p>
+      </blockquote>
+      <p><b>'padding' </b></p>
+      <blockquote> 
+        <p>Value:</p>
+        <p>The 'padding' property is a shorthand property for setting 'padding-top', 
+          'padding-right' 'padding-bottom' and 'padding-left' at the same place 
+          in the style sheet. If four values are specified they apply to top, 
+          right, bottom and left respectively. If there is only one value, it 
+          applies to all sides. </p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="jacascript:history.back(1)">&lt;&lt; 
+        Back </a></font></p>
+      </td>
+  </tr>
+</table>
+</body>
+</html>

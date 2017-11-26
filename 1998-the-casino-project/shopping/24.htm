@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script language="JavaScript">
+<!--
+function YY_Layerfx(yyleft,yytop,yyfnx,yyfny,yydiv,yybilder,yyloop,yyto,yycnt,yystep) { //v1.2
+//copyright (c)1998 Yaromat, Jaro von Flocken
+ if ((document.layers)||(document.all)){
+  eval("myfunc=yyfnx.replace(/x/gi, yycnt)");
+  with (Math) {yynextx= eval(myfunc)}
+  eval("myfunc=yyfny.replace(/x/gi, yycnt)");
+  with (Math) {yynexty= eval(myfunc)}
+  yycnt=(yyloop && yycnt>=yystep*yybilder)?0:yycnt+yystep;
+  if (document.layers){
+    eval(yydiv+".top="+(yynexty+yytop))
+    eval(yydiv+".left="+(yynextx+yyleft))
+  }
+  if (document.all){
+    eval("yydiv=yydiv.replace(/.layers/gi, '.all')");
+    eval(yydiv+".style.pixelTop="+(yynexty+yytop));
+    eval(yydiv+".style.pixelLeft="+(yynextx+yyleft));
+  }
+  argStr='YY_Layerfx('+yyleft+','+yytop+',"'+yyfnx+'","'+yyfny+'","'+yydiv+'",'+yybilder+','+yyloop+','+yyto+','+yycnt+','+yystep+')';
+  if (yycnt<=yystep*yybilder){eval(yydiv+".yyto=setTimeout(argStr,yyto)");}
+ }
+
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" onLoad="YY_Layerfx(1,1,'cos\(x/10\)*0.2*x','sin\(x/10\)*0.2*x','document.layers[\'Layer1\']',1000,false,1,0,4)">
+<div id="Layer1" style="position:absolute; left:4px; top:5px; width:161px; height:144px; z-index:1"><img src="shop_images/d&amp;g.JPG" width="231" height="150"></div>
+</body>
+</html>

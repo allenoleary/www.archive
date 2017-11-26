@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Connecting to a remote site with Dreamweaver</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Dreamweaver 
+        Behviours</b></font></p>
+      <p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Introduction:</font></b></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Dreamweaver 
+        behaviours are just javascripts of various levels of cleverness that Dreamweaver 
+        developers have written. There is no functional difference between a behaviour 
+        inserted by dreameaver and the same thing copy and pasted as a javascript 
+        in a text editor - it all uses the same basic building blocks.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The good 
+        thing aout behaviours is that they are pretty much bomb-proof and are 
+        fairly reliable across most browsers and platforms, and Dreamweaver wraps 
+        it all up nicely for you so that you don't have to get your hands dirty 
+        with the javascript.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Some behviours 
+        (such as 'Open Browser window' are fairly basic and easy to understand. 
+        Others are very complex and beyond the understabding of most web publishers. 
+        However it is good to have a basic understanding of how javascript functions 
+        to use them well.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>JavaScript: 
+        Just the basics.</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">JS is a way 
+        of the page telling the browser what to do with the loaded page. Some 
+        javascript functions emulate what a user might do with a browser like 
+        this: document.history.back(1). This operates just as if you have hit 
+        the back button on our browser. Other javaScript might collect information 
+        about the environment the page is in, such as what platform or browser 
+        is currently viewing the document (called a sniffer script). Javascript 
+        can also handle more difficult things like layer animation or accomplishing 
+        more than one thing at once (like opening two new ages into different 
+        panels of a frameset at once).</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>What makes 
+        the javascript work?</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Javascript 
+        can work in several ways:</font></p>
+      <ul>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You can 
+            use some javascripts in the body of a page to write conditional html</font></p>
+        </li>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> You 
+            can call javascript directly from a &lt;a href&gt; tag, where it is 
+            attached to an <b>event</b></font></p>
+        </li>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You can 
+            call reusable javascript functions from an &lt;a href&gt; tag where 
+            it is attached to an <b>event</b>.</font></p>
+        </li>
+      </ul>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../../wddp/alert.html">See 
+        the difference between the last two</a></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In Dreamweaver, 
+        there is pretty much always a function. This has the advantage that you 
+        can use a single script more than once in a page, so it cuts down page 
+        sizes and makes you files easier to read.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>What's 
+        an event then?</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">An event 
+        is a way that a browser catches user actions. For example, even though 
+        you don;t see it, there is an implied event when you click a plain old 
+        text link: onClick. What event can be caught where depends on the browser, 
+        but some of the common ones are:</font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;a href=&quot;#&quot; 
+          <b>onMouseOver</b>=&quot;doSomeJavaScript( )&quot; <b>onMouseOut</b>=&quot;doSomethingelse( 
+          )&quot;&gt;</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;body 
+          <b>onLoad</b>=&quot;doSomeMoreJavaScript( )&quot;&gt;</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">For the body 
+        tags the most useful events are:</font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">onLoad: 
+          when a page starts loading<br>
+          onBlur: When the user clicks off the current page<br>
+          onFocus: When a user clicks onto the current page</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Otherwise 
+        the most common are:</font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">OnClick<br>
+          OnMouseOver<br>
+          OnMouseOut</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">There are 
+        also more esoteric events (especially in IE 4+) like:<b> onHelp</b></font></p>
+      <blockquote>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Try:</b>see 
+          if you can alter the alerts.htm page to make an alert box popup when 
+          the page loads, with no interaction from the user.</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>So what 
+        about Dreamweaver...</b></font></p>
+      <p>&nbsp;</p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

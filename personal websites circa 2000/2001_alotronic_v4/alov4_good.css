@@ -1,0 +1,193 @@
+<style type="text/css">
+<!--
+
+
+p  {
+	//font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #000000;
+	margin-left : 5px;
+	margin-top : 0px;
+	margin-right : 5px;
+	margin-bottom : 0px;
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 5px;
+	padding-left : 0px;
+	font-size:10px;
+	line-height: 14px;
+}
+
+.button  {
+	font-family : Verdana, Arial, Helvetica;
+	font-size : 11px;
+	width : 135px;
+	color : #FFFFFF;
+	background-color : #666666;
+	border-color : #000000;
+	border : 1px solid #FFFFFF;
+	size="20"
+}
+
+body  {
+	
+	background-attachment : fixed;
+	background-repeat : no-repeat;
+	margin-top : 0px;
+	margin-right : 0px;
+	margin-bottom : 20px;
+	margin-left : 0px;
+	
+}
+
+.resume  {
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	border-top : 1px #666666 dashed;
+	left : 0px;
+	top : 90%;
+	width : 267px;
+	height : 249px;
+	position : absolute;
+	z-index : 1;
+}
+.topofall  {
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	left: 120px;
+	top : 0px;
+	position : absolute;
+}
+
+.news1  {
+	padding-top : 0px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	left: 120px;
+	top : 145px;
+	
+	position : absolute;
+	background-color : #FFFFFF;
+	width: 195px;
+	voice-family: "\"}\""; 
+  voice-family:inherit;
+  width:185px
+}
+
+
+.news2  {
+	padding-top :0px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	left : 320px;
+	top : 145px;
+	position : absolute;
+	background-color : #FFFFFF;
+	width: 195px;
+	voice-family: "\"}\""; 
+  voice-family:inherit;
+  width:185px
+}
+
+
+.news3  {
+	padding-top : 0px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	left : 520px;
+	top : 145px;
+	position : absolute;
+	background-color : #FFFFFF;	
+	width: 195px;
+	voice-family: "\"}\""; 
+  voice-family:inherit;
+  width:185px
+
+}
+
+.topmenu  {
+	padding-top : 5px;
+	padding-right : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	border : 1px #666666 dashed;
+	left: 120px;
+	top : 80px;
+	width : 70%;
+	height : 80px;
+	position : absolute;
+	background-color : #FFFFFF;
+}
+
+.page  {
+	padding-top : 0px;
+	padding-right : 20px;
+	padding-bottom : 5px;
+	padding-left : 20px;
+	border : 1px #666666 dashed;
+	left : 120px;
+	top : 145px;
+	width : 70%;
+	position : absolute;
+	background-color : #FFFFFF;
+}
+
+.zero_margin  {
+	margin-top : 0px;
+	margin-right : 0px;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 5px;
+	padding-left : 0px;
+}
+
+.date  {
+	color : #FF6600;
+}
+
+a:link  {
+	font-weight : bold;
+	color : #FF6600;
+	text-decoration : none;
+}
+
+a:visited  {
+	font-weight : bold;
+	text-decoration : none;
+	color : #FF6600;
+}
+
+a:hover  {
+	text-decoration : line-through;
+}
+
+
+ul  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	line-height : 12px;
+	color : #000000;
+	list-style-position : outside;
+	list-style-type : square;
+}
+
+.h5 {  font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #FF6600;
+	margin-top: 15px; 
+	letter-spacing : .25em;}
+
+-->
+</style>

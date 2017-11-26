@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+<!--
+	function loadMeUp(times){
+	for (count=0; count < times; count++)
+	{
+	PageName = ""
+	randomPage = ""
+	frameNum = ""
+	
+	randomPage = Math.round(Math.random() * 19)
+	frameNum = Math.round(Math.random() * 11)
+	PageName = randomPage + ".htm"
+	
+	parent.frames[frameNum].location=PageName
+	}
+	}
+//-->
+</script>
+
+
+<script language="javaScript">
+
+function flicker(){
+
+for (count=0; count < 100; count++){
+    document.bgColor = "black";
+	setTimeout("nothing()", 5000);
+	document.bgColor = "white";
+	setTimeout("nothing()", 5000);
+	}
+}
+	
+
+</script>
+
+	<script language="JavaScript">
+	function nothing(){
+nil = 0
+}
+</script>
+
+
+
+
+  <script language="JavaScript">
+<!--
+function KBFader(name,br,bg,bb,er,eg,eb,dur,stepr,stepb,stepg,theText) {
+// Copyright (c) 1998 by Kevin Bartz. All rights reserved. This site has been enhanced by Kevin Bartz's own original text fader! Mail him at kevinbartz@geocities.com! This line must remain in the script.
+IE4=(document.all)? 1 : 0
+NS4=(document.layers)? 1: 0
+if (stepr==0) {
+hexa=new Array(16)
+i=0
+while (i<10) {
+hexa[i]=""+i
+i++
+}
+hexa[10]="A"
+hexa[11]="B"
+hexa[12]="C"
+hexa[13]="D"
+hexa[14]="E"
+hexa[15]="F"
+iters=(dur*20)
+stepr=(er-br)/iters
+stepb=(eb-bb)/iters
+stepg=(eg-bg)/iters
+}
+if ((br<er & br+stepr<=er)|(br>er & br+stepr>=er)) {
+br=Math.round(br+stepr)
+bg=Math.round(bg+stepg)
+bb=Math.round(bb+stepb)
+br=(br>255) ? 255 : br
+bg=(bg>255) ? 255 : bg
+bb=(bb>255) ? 255 : bb
+br=(br<0) ? 0 : br
+bg=(bg<0) ? 0 : bg
+bb=(bb<0) ? 0 : bb
+rhex=hexa[Math.floor(br/16)]+hexa[br-(Math.floor(br/16)*16)]
+ghex=hexa[Math.floor(bg/16)]+hexa[bg-(Math.floor(bg/16)*16)]
+bhex=hexa[Math.floor(bb/16)]+hexa[bb-(Math.floor(bb/16)*16)]
+theColour="#"+rhex+ghex+bhex
+if (IE4) {
+document.all[name].innerHTML="<h1><font color='"+theColour+"'>"+theText+"</font></h1>"
+}
+if (NS4) {
+theRef=eval("document."+name)
+theRef.document.open()
+theRef.document.write("<h1><font color='"+theColour+"'>"+theText+"</font></h1>")
+theRef.document.close()
+}
+theNextStuff="KBFader('"+name+"',"+br+","+bg+","+bb+","+er+","+eg+","+eb+","+dur+","+stepr+","+stepb+","+stepg+",'"+theText+"')"
+setTimeout(theNextStuff,10)
+} else {
+rhex=hexa[Math.floor(er/16)]+hexa[er-(Math.floor(er/16)*16)]
+ghex=hexa[Math.floor(eg/16)]+hexa[eg-(Math.floor(eg/16)*16)]
+bhex=hexa[Math.floor(eb/16)]+hexa[eb-(Math.floor(eb/16)*16)]
+theColour="#"+rhex+ghex+bhex
+if (IE4) {
+document.all[name].innerHTML="<h1><font color='"+theColour+"'>"+theText+"</font></h1>"
+}
+if (NS4) {
+theRef=eval("document."+name)
+theRef.document.open()
+theRef.document.write("<h1><font color='"+theColour+"'>"+theText+"</font></h1>")
+theRef.document.close()
+}
+}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+h1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 36pt}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onFocus="loadMeUp(5)" onLoad="KBFader('Layer1',0,0,0,255,255,255,10,10,10,10,'shopping');flicker()">
+<div id="Layer1" style="position:absolute; left:14px; top:13px; width:162px; height:42px; z-index:1"></div>
+</body>
+</html>
+

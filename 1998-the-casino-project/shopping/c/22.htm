@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+  <script language="JavaScript">
+<!--
+function MM_showHideLayers() { //v1.2
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+
+<SCRIPT language="JavaScript">
+
+function twitcher() {
+
+// this one reloads this page in a new random frame...
+// runaway...
+
+	FrameNum = "";
+	FrameNum= Math.round(Math.random() * 11);
+	parent.frames[FrameNum].location = "22.htm";
+	window.document.location="pin.htm";
+}
+	
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#000000">
+<div id="Layer1" style="position:absolute; left:15px; top:-5px; width:143px; height:224px; z-index:1"><a href="#" onMouseOver="MM_showHideLayers('document.layers[\'Layer1\']','document.all[\'Layer1\']','hide'); twitcher()"><img src="../shop_images/black2neg.jpg" width="150" height="264" name="her" border="0"></a></div>
+</body>
+</html>

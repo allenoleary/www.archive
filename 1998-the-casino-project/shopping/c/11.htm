@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script language="JavaScript">
+<!--
+function AW_MoveLayer(layerName,x,y,isRelative,NSpath,IEpath) { //v1.0
+	var isNav, isIE 	
+	if (parseInt(navigator.appVersion) >= 4) { 	
+	   if (navigator.appName == 'Netscape') { 	
+	      isNav = true 	
+	   } else { 		
+	      isIE = true 	
+	   } 				
+	} 					
+	if(NSpath =='') {	
+		if(isIE){ eval('var theLayer='+layerName)}	
+		else{ eval('var theLayer=document.'+layerName)	}
+		}	
+	else{	
+		if(isIE){ eval('var theLayer='+IEpath)}	
+		else{ eval('var theLayer='+NSpath)	}
+		}	
+		var changed=false 
+							
+	if(isNav){				
+		if(eval(isRelative)){	
+			theLayer.top+=eval(y)		
+			theLayer.left+=eval(x)	
+			} 
+		else{ 
+			theLayer.top=eval(y) 
+			theLayer.left=eval(x) 
+			} 
+		}   
+	else {     
+		if(eval(isRelative)){	
+			theLayer.style.pixelTop+=eval(y)		
+			theLayer.style.pixelLeft+=eval(x)	
+			} 
+		else{ 
+			theLayer.style.pixelTop=eval(y) 
+			theLayer.style.pixelLeft=eval(x) 
+			} 
+		}   
+	document.MM_returnValue=false;	
+	theLayer.document.MM_returnValue=false; 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000">
+<div id="Layer1" style="position:absolute; left:29px; top:67px; width:135px; height:158px; z-index:1"> 
+  <p><a href="#" onMouseOver="AW_MoveLayer('Layer1','-20','-20','true','','');return document.MM_returnValue"><img src="../shop_images/x.gif" width="131" height="63" border="0"></a></p>
+</div>
+</body>
+</html>

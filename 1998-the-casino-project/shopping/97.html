@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	
+	<script language="JavaScript">
+	function randomPhrase() {
+
+// declare variables for no particulra reason at all
+	
+//
+	myFirst = Math.round(Math.random()* 4);
+	mySecond = Math.round(Math.random()* 4) + 6;
+	myThird = Math.round(Math.random()* 4) + 10;
+	
+// write first varu=iables in too test
+	document.write ("<br>" + myFirst);
+	document.write ("<br>" + mySecond);
+	document.write ("<br>" + myThird);
+
+	fileFirst = myFirst + ".htm";
+	fileSecond = mySecond + ".htm";
+	fileThird = myThird + ".htm";
+	//parent.frames(4).location=FileFirst;
+	//parent.frames(5).location="5.htm";
+	//parent.frames(6).location=FileSecond;
+	//parent.frames(7).location=FileThird;
+
+	document.write ("<br>" + fileFirst);
+	document.write ("<br>" + fileSecond);
+	document.write ("<br>" + fileThird);
+	
+}
+	
+		
+	</script>
+</head>
+
+<body onLoad="randomPhrase()">
+
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<style type="text/css">
+<!--
+p {  color: #9999CC; font-style: italic}
+a {  color: #CC99CC; text-decoration: none}
+-->
+</style>
+  <script language="JavaScript">
+<!--
+function KBFader(name,br,bg,bb,er,eg,eb,dur,stepr,stepb,stepg,theText) {
+// Copyright (c) 1998 by Kevin Bartz. All rights reserved. This site has been enhanced by Kevin Bartz's own original text fader! Mail him at kevinbartz@geocities.com! This line must remain in the script.
+IE4=(document.all)? 1 : 0
+NS4=(document.layers)? 1: 0
+if (stepr==0) {
+hexa=new Array(16)
+i=0
+while (i<10) {
+hexa[i]=""+i
+i++
+}
+hexa[10]="A"
+hexa[11]="B"
+hexa[12]="C"
+hexa[13]="D"
+hexa[14]="E"
+hexa[15]="F"
+iters=(dur*20)
+stepr=(er-br)/iters
+stepb=(eb-bb)/iters
+stepg=(eg-bg)/iters
+}
+if ((br<er & br+stepr<=er)|(br>er & br+stepr>=er)) {
+br=Math.round(br+stepr)
+bg=Math.round(bg+stepg)
+bb=Math.round(bb+stepb)
+br=(br>255) ? 255 : br
+bg=(bg>255) ? 255 : bg
+bb=(bb>255) ? 255 : bb
+br=(br<0) ? 0 : br
+bg=(bg<0) ? 0 : bg
+bb=(bb<0) ? 0 : bb
+rhex=hexa[Math.floor(br/16)]+hexa[br-(Math.floor(br/16)*16)]
+ghex=hexa[Math.floor(bg/16)]+hexa[bg-(Math.floor(bg/16)*16)]
+bhex=hexa[Math.floor(bb/16)]+hexa[bb-(Math.floor(bb/16)*16)]
+theColour="#"+rhex+ghex+bhex
+if (IE4) {
+document.all[name].innerHTML="<font color='"+theColour+"'>"+theText+"</font>"
+}
+if (NS4) {
+theRef=eval("document."+name)
+theRef.document.open()
+theRef.document.write("<font color='"+theColour+"'>"+theText+"</font>")
+theRef.document.close()
+}
+theNextStuff="KBFader('"+name+"',"+br+","+bg+","+bb+","+er+","+eg+","+eb+","+dur+","+stepr+","+stepb+","+stepg+",'"+theText+"')"
+setTimeout(theNextStuff,10)
+} else {
+rhex=hexa[Math.floor(er/16)]+hexa[er-(Math.floor(er/16)*16)]
+ghex=hexa[Math.floor(eg/16)]+hexa[eg-(Math.floor(eg/16)*16)]
+bhex=hexa[Math.floor(eb/16)]+hexa[eb-(Math.floor(eb/16)*16)]
+theColour="#"+rhex+ghex+bhex
+if (IE4) {
+document.all[name].innerHTML="<font color='"+theColour+"'>"+theText+"</font>"
+}
+if (NS4) {
+theRef=eval("document."+name)
+theRef.document.open()
+theRef.document.write("<font color='"+theColour+"'>"+theText+"</font>")
+theRef.document.close()
+}
+}
+}
+//-->
+</script>
+  <script language="JavaScript">
+<!--
+function MM_showHideLayers() { //v1.2
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+  <script language="JavaScript">
+<!--
+function AW_MoveLayer(layerName,x,y,isRelative,NSpath,IEpath) { //v1.0
+	var isNav, isIE 	
+	if (parseInt(navigator.appVersion) >= 4) { 	
+	   if (navigator.appName == 'Netscape') { 	
+	      isNav = true 	
+	   } else { 		
+	      isIE = true 	
+	   } 				
+	} 					
+	if(NSpath =='') {	
+		if(isIE){ eval('var theLayer='+layerName)}	
+		else{ eval('var theLayer=document.'+layerName)	}
+		}	
+	else{	
+		if(isIE){ eval('var theLayer='+IEpath)}	
+		else{ eval('var theLayer='+NSpath)	}
+		}	
+		var changed=false 
+							
+	if(isNav){				
+		if(eval(isRelative)){	
+			theLayer.top+=eval(y)		
+			theLayer.left+=eval(x)	
+			} 
+		else{ 
+			theLayer.top=eval(y) 
+			theLayer.left=eval(x) 
+			} 
+		}   
+	else {     
+		if(eval(isRelative)){	
+			theLayer.style.pixelTop+=eval(y)		
+			theLayer.style.pixelLeft+=eval(x)	
+			} 
+		else{ 
+			theLayer.style.pixelTop=eval(y) 
+			theLayer.style.pixelLeft=eval(x) 
+			} 
+		}   
+	document.MM_returnValue=false;	
+	theLayer.document.MM_returnValue=false; 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000">
+<div id="Layer1" style="position:absolute; left:4px; top:25px; width:135px; height:158px; z-index:1"> 
+  <p><a href="#" onMouseOver="AW_MoveLayer('Layer1','20','20','true','','');return document.MM_returnValue"><img src="../shop_images/x.gif" width="131" height="63" border="0"></a></p>
+</div>
+</body>
+</html>

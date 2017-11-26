@@ -1,0 +1,567 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0052)http://www.apple.com/quicktime/authoring/embed2.html -->
+<HTML><HEAD><TITLE>Apple - Products - QuickTime</TITLE>
+<META http-equiv=content-type content=text/html;charset=iso-8859-1><!-- END HEAD OPEN --><!-- BEGIN META TAG INFO -->
+<META http-equiv=PICS-Label 
+content='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l gen true comment "RSACi North America Server" for "http://www.apple.com" on "1999.12.29T20:06-0800" r (n 0 s 0 v 0 l 0))'>
+<META 
+content="Apple Computer, Power Macintosh, PowerBook, AppleWorks, WebObjects, iMovie, QuickTime, Desktop Movies, Software, Operating Systems, Mac OS, iMac, iBook" 
+name=keywords>
+<META 
+content="Visit www.apple.com for the latest news, the hottest products, and technical support resources from Apple Computer, Inc." 
+name=Description>
+<META http-equiv=Expires content="Mon, 05 Apr 1999 23:59:59 GMT">
+<META content=19992109 name=Date.Modified><LINK href="http://www.apple.com/" 
+rel=home><LINK href="http://www.apple.com/find/siteindex.html" rel=index><LINK 
+href="http://www.apple.com/find/" rel=find><!-- END META TAG INFO --><!-- BEGIN TITLE --><!-- END TITLE --><!-- BEGIN HEAD CLOSE --><!-- END HEAD CLOSE --><!-- BEGIN BODY OPEN -->
+<META content="MSHTML 5.50.4134.600" name=GENERATOR></HEAD>
+<BODY bgColor=white leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<CENTER>
+  <TABLE cellSpacing=0 cellPadding=12 width=550 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=autohref></A><B><CODE>AUTOHREF=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 4 or later) 
+      <BLOCKQUOTE><CODE>AUTOHREF</CODE> can either be set to <CODE>TRUE 
+        </CODE>or<CODE> FALSE</CODE>. The default behavior is set to FALSE. When 
+        set to TRUE, the <CODE>AUTOHREF </CODE>attribute causes any URL 
+        specified in the HREF parameter to load immediately, without waiting for 
+        a mouse click.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" href="http://dns/foo.mov" 
+        autohref="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><FONT size=4><A 
+      name=autoplay></A></FONT><B><CODE>AUTOPLAY=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 3 or later) 
+      <BLOCKQUOTE><CODE>AUTOPLAY</CODE> can either be set to <CODE>TRUE 
+        </CODE>or<CODE> FALSE</CODE>. The default behavior is set by the user in 
+        the 'QuickTime Plug-in Settings.' When set to TRUE, the <CODE>AUTOPLAY 
+        </CODE>attribute causes the movie to start playing as soon as the 
+        QuickTime Plug-In estimates that it will be able to play the entire 
+        movie without waiting for additional data.<BR><BR>For example:<BR><FONT 
+        color=#660000><BR>&lt;embed src="sample.mov" width="200" height="240" 
+        autoplay="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A name=bgcolorhex></A><B><CODE>BGCOLOR=<I>hex 
+      value</I></CODE></B> (optional...requires QuickTime 3 or later) 
+      <BLOCKQUOTE>This attribute specifies the background color for any space 
+        that is not taken by the movie. For example, if a 160x120 movie was 
+        embedded in a space of 200x120, there would be 40 pixels of undefined 
+        color space in the width. Specifying the hex value of the background 
+        color will fill the undefined space with the value chosen.<BR><BR>For 
+        example:<BR><FONT color=#660000><BR>&lt;embed src="sample.mov" 
+        width="200" height="240" bgcolor="000000"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=bgcolorname></A><B><CODE>BGCOLOR=<I>name</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>The QuickTime 4 Plug-in has additional support for the 
+        BGCOLOR attribute by recognizing color names. Acceptable values for this 
+        attribute are:<BR><BR>"BLACK" (#000000), "GREEN" (#008000), "SILVER" 
+        (#C0C0C0), "LIME" (#00FF00),<BR>"GRAY" (#808080), "OLIVE" (#808000), 
+        "WHITE" (#FFFFFF), "YELLOW" (#FFFF00),<BR>"MAROON" (#800000), "NAVY" 
+        (#000080), "RED" (#FF0000), "BLUE" (#0000FF),<BR>"PURPLE" (#800080), 
+        "TEAL" (#008080), "FUCHSIA" (#FF00FF), "AQUA" (#00FFFF)<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;embed src="sample.mov" 
+        width="200" height="240" bgcolor="black"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=cache></A><B><CODE>CACHE=<I>value</I></CODE></B> (optional...requires 
+      QuickTime 3 or later) 
+      <BLOCKQUOTE>If <CODE>CACHE=TRUE</CODE> is specified, the browser will 
+        <CODE>CACHE</CODE> movies. If the movie is in <CODE>CACHE</CODE> when 
+        the user returns to the page, the movie will be played from 
+        <CODE>CACHE</CODE> instead of downloading again. <CODE>CACHE</CODE> can 
+        either be <CODE>TRUE </CODE>or<CODE> FALSE</CODE>, or simply 
+        <CODE>CACHE.</CODE> <CODE>CACHE</CODE> by itself implies 
+        <CODE>TRUE.</CODE> The default behavior is set by the user in the 
+        'QuickTime Plug-in Settings.'<BR><BR><B>Note:</B> The functionality of 
+        this attribute is only supported by Netscape Navigator, version 3.0 or 
+        later.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+      cache="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=controller></A><B><CODE>CONTROLLER=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 3 or later) 
+      <BLOCKQUOTE>The <CODE>CONTROLLER</CODE> attribute sets the visibility of 
+        the movie controller. <CODE>CONTROLLER</CODE> can either be 
+        <CODE>TRUE</CODE> or <CODE>FALSE.</CODE> By default, 
+        <CODE>CONTROLLER</CODE> is <CODE>TRUE.</CODE> If <CODE>CONTROLLER</CODE> 
+        is set to <CODE>FALSE,</CODE> the movie controller will not 
+        display.<BR><BR><B>Note:</B> For compatibility with existing web pages, 
+        the default is <CODE>FALSE</CODE> for QuickTime VR movies, image files, 
+        and flash files.<BR><BR><B>Note 2:</B> For poster movies, you would 
+        normally set <CODE>controller="false".</CODE><BR><BR><BR>For 
+        example:<BR><FONT color=#660000><BR>&lt;embed src="sample.mov" 
+        width="200" height="240" controller="false"&gt;<BR>
+          </FONT> </BLOCKQUOTE>
+      </TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=correction></A><B><CODE>CORRECTION=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 3 or later) 
+      <BLOCKQUOTE><CODE>CORRECTION</CODE> can either be <CODE>NONE</CODE> or 
+        <CODE>FULL.</CODE> By default, <CODE>CORRECTION</CODE> equals 
+        <CODE>FULL.</CODE>This attribute is only appropriate for QuickTime VR 
+        panoramas.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="320" height="240" 
+      correction="full"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=dontflattenwhensaving></A><B><CODE>DONTFLATTENWHENSAVING</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE><CODE>DONTFLATTENWHENSAVING</CODE> makes the plug-ins' 'Save 
+        as QuickTime movie' work the same way the 'Save as source' does. Adding 
+        the <CODE>DONTFLATTENWHENSAVING</CODE> tag saves the data into a movie 
+        file without flattening it.<BR><BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="320" height="240" 
+        dontflattenwhensaving&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=enablejavascript></A><B><CODE>ENABLEJAVASCRIPT</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE><CODE>ENABLEJAVASCRIPT</CODE> can either be set to TRUE or 
+        FALSE. The default behavior is FALSE. If you want to control a QuickTime 
+        movie using JavaScript functions, you need to enable JavaScript for that 
+        movie by setting <CODE>ENABLEJAVASCRIPT="TRUE"</CODE>.<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;embed src="sample.mov" 
+        width="320" height="240" 
+  enablejavascript=true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=endtime></A><B><CODE>ENDTIME=<I>time</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>The <CODE>ENDTIME</CODE> attribute defines the last frame of 
+        the movie. <CODE>ENDTIME</CODE> can be any time up to the duration of 
+        the movie. By default, <CODE>ENDTIME</CODE> is the duration of the 
+        movie. This attribute takes a time value in the form -- 
+        Hours:Minutes:Seconds:Frames (30ths). The frames component can be 
+        specified as a fixed point number so that more specific times can be 
+        specified for instance 3:30:22.5 means 3 minutes, 30 seconds and 22.5 
+        frames.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+        endtime="3:30:22.5"&gt;<BR></FONT><BR>
+          See also <CODE>STARTTIME</CODE></BLOCKQUOTE>
+      </TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=fov></A><B><CODE>FOV=<I>integer</I></CODE></B> (optional...requires 
+      QuickTime 3 or later) 
+      <BLOCKQUOTE>Only integer values between 8 and 64 degrees are supplied 
+        for this attribute. If no value is specified for <CODE>FOV,</CODE> the 
+        value stored in the movie is used. The <CODE>FOV</CODE> attribute allows 
+        you to specify the initial field of view angle for a QuickTime VR 
+        movie.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="320" height="240" 
+    fov="55"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=goton></A><B><CODE>GOTO<I>n</I></CODE></B> (Optional...Requires 
+      QuickTime 4) 
+        <BLOCKQUOTE>See <CODE>QTNEXT</CODE></BLOCKQUOTE>
+      </TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A name=height></A><B><CODE>HEIGHT=<I>size in 
+      pixels</I></CODE></B> (Required) 
+        <BLOCKQUOTE>The <CODE>HEIGHT</CODE> attribute specifies the height of 
+          the embedded file in pixels. The <CODE>HEIGHT</CODE> attribute is <B>required</B> 
+          unless the <CODE>HIDDEN</CODE> attribute is specified. The <CODE>HEIGHT</CODE> 
+          of the movie can be found by choosing 'Get Info...' in the 'Movie' menu 
+          within QuickTime Player. If you do not use the <CODE>SCALE</CODE> attribute 
+          and you supply a height that is smaller than the actual height of the 
+          movie (plus 16 if you are showing the controller), the movie will be 
+          cropped to fit the height. If you supply a height that is greater than 
+          the height of the movie, the movie will be centered inside this height. 
+          <P><B>Note:</B>Never specify a height of less than 2 as this can cause 
+        problems with some browsers.<BR></P>
+        <P><B>Note 2:</B>If the movie controller is visible, an additional 16 
+        pixels will need to added.<BR><BR>For example:<BR><FONT 
+        color=#660000><BR>&lt;embed src="sample.mov" width="200" height="240" 
+        controller="true"&gt;<BR></FONT><BR>
+            See also <CODE>WIDTH</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A name=hidden></A><B><CODE>HIDDEN</CODE></B> 
+      (optional...requires QuickTime 3 or later) 
+      <BLOCKQUOTE>There are no values to supply for this attribute. The 
+        <CODE>HIDDEN</CODE> attribute controls the visibility of the movie. If 
+        you do not supply <CODE>HIDDEN</CODE>, then the movie will be visible. 
+        If you supply <CODE>HIDDEN,</CODE> the movie is not visible on the page. 
+        This option is not appropriate for QuickTime VR Objects or Panoramas. 
+        The <CODE>HIDDEN</CODE> attribute is appropriate for sound-only movies 
+        which are hidden in the background.<BR><BR>
+          <P><B>Note:</B>If you add the <CODE>HIDDEN</CODE> attribute, be sure to 
+            set <CODE>AUTOPLAY="TRUE"</CODE> as well.<BR>
+            For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+      hidden&gt;</FONT></P></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=hotspotn></A><B><CODE>HOTSPOTn=<I>"url"</I></CODE></B> 
+      (optional...requires QuickTime 3 or later) 
+      <BLOCKQUOTE>This attribute enables clicking on a hotspot with the 
+        specified ID in a VR panorama to take the user to the specified URL. 
+        &nbsp;<I><CODE>n</CODE></I> is the hotspot ID as defined when the hot 
+        spot is created in the QuickTime VR authoring tools.<BR><BR>You can use 
+        TargetN to target a hotspot URL to a frame or window, or to the special 
+        targets "quicktimeplayer" or "myself". For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="200" height="240" 
+        hotspot17="http://www.apple.com"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=href></A><B><CODE>HREF=<I>url</I></CODE></B> (optional...requires 
+      QuickTime 3 or later) 
+      <BLOCKQUOTE>When set, the <CODE>HREF</CODE> attribute provides a link to 
+        another page or movie when the movie is clicked on. 
+        <P><B>Note:</B> If you are using a relative path name for the HREF then 
+        it should be relative to the location of the movie specified in the SRC 
+        attribute.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+        href="http://www.apple.com/quicktime"&gt;<BR></FONT><BR></P>
+          <P>See also: <CODE>TARGET</CODE> and <CODE>TARGET="QUICKTIME PLAYER"</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=kioskmode></A><B><CODE>KIOSKMODE=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE><CODE>KIOSKMODE</CODE> is either <CODE>TRUE</CODE> or 
+        <CODE>FALSE.</CODE> By default, <CODE>KIOSKMODE</CODE> is 
+        <CODE>FALSE.</CODE> When <CODE>KIOSKMODE</CODE> is set to 
+        <CODE>TRUE,</CODE> the plug-in does not include its pop-up menu in the 
+        movie controller and does not allow drag and drop to save the 
+        movie.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+      kioskmode="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=loop></A><B><CODE>LOOP=<I>value</I></CODE></B> (optional...requires 
+      QuickTime 3 or later) 
+      <BLOCKQUOTE><CODE>LOOP</CODE> is either <CODE>TRUE,</CODE> 
+        <CODE>FALSE</CODE> or <CODE>PALINDROME.</CODE> By default, 
+        <CODE>LOOP</CODE> is set to <CODE>FALSE.</CODE> When set, the 
+        <CODE>LOOP</CODE> attribute makes the movie play continuously. Setting 
+        <CODE>LOOP </CODE>to <CODE>PALINDROME </CODE>causes the movie to play 
+        alternately forwards and backwards. This option is not appropriate for 
+        QuickTime VR Objects and Panoramas.<BR><BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="200" height="240" 
+        loop="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=movieid></A><B><CODE>MOVIEID=<I>integer</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>Just like <CODE>MovieName,</CODE> but uses a numeric ID 
+        instead of a name string. <CODE>MovieID</CODE> may be computed in the 
+        Wired Sprite scripts and may be useful where the <CODE>MovieName</CODE> 
+        of the target movie is not known.<BR><BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="200" height="240" 
+        movieid="5"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=moviename></A><B><CODE>MOVIENAME=<I>name</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>With QuickTime 4.0 the targeting mechanism of wired actions 
+        has been extended to enable any action to target an element of another 
+        open movie. This means two or more movies within the same web page can 
+        communicate using the QuickTime 4.0 Plug-in. These same movies may 
+        communicate if they are opened in QuickTime Player if they are named 
+        using userdata atoms. For example, one movie can act as a controller for 
+        another movie setting things such as it's rate, volume, the pan angle of 
+        a QTVR track it contains, or the location of a sprite in a sprite track 
+        that it contains. In many cases things that required JavaScript can now 
+        be done using only the QuickTime Plug-in with Wired Movies.<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;embed src="sample.mov" 
+        width="200" height="240" 
+  moviename="targetmov"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=node></A><B><CODE>NODE=</CODE><I><CODE>integer</CODE></I></B> 
+      (optional...requires QuickTime 3) 
+      <BLOCKQUOTE>The <CODE>NODE</CODE> attribute allows you to specify the 
+        initial node for a multi-node QuickTime VR movie. Only integer values 
+        are supplied for this attribute. If no value is specified for this 
+        attribute, the default <CODE>NODE</CODE> and view (specified at creation 
+        time of the pano movie) is used.<BR><BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="320" height="240" 
+        node="128"&gt;</FONT> 
+          <P>See also: <CODE>FOV</CODE>, <CODE>PAN</CODE>, <CODE>TILT</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=pan></A><B><CODE>PAN=<I>integer</I></CODE></B> (optional...requires 
+      QuickTime 3) 
+      <BLOCKQUOTE>The <CODE>PAN</CODE> attribute allows you to specify the 
+        initial pan angle for a QuickTime VR movie. Only integer values are 
+        supplied for this attribute. The range of values for a typical movie 
+        would be 0 to 360 degrees. If no value for <CODE>PAN</CODE> is 
+        specified, the value stored in the movie is used. This attribute has no 
+        meaning for a standard QuickTime movie.<BR><BR>For example:<BR><FONT 
+        color=#660000><BR>&lt;embed src="sample.mov" width="320" height="240" 
+        pan="180"&gt;</FONT> 
+          <P>See also: <CODE>FOV</CODE>, <CODE>NODE</CODE>, <CODE>TILT</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=playeveryframe></A><B><CODE>PLAYEVERYFRAME=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 3) 
+      <BLOCKQUOTE><CODE>PLAYEVERYFRAME</CODE> is either <CODE>TRUE</CODE> or 
+        <CODE>FALSE.</CODE> By default, <CODE>PLAYEVERYFRAME</CODE> is set to 
+        <CODE>FALSE.</CODE> When set, the <CODE>PLAYEVERYFRAME</CODE> attribute 
+        causes the movie to play every frame of the movie even if it is 
+        necessary to play at a slower rate to do so. This attribute is 
+        particularly useful to play simple animations. This option is 
+        appropriate for QuickTime movies.<BR><BR><B>Note:</B> Setting 
+        <CODE>PLAYEVERYFRAME=TRUE</CODE> will turn off all audio 
+        tracks.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+        playeveryframe="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=pluginspage></A><B><CODE>PLUGINSPAGE=<I>url</I></CODE></B> (optional) 
+
+      <BLOCKQUOTE>The <CODE>PLUGINSPAGE</CODE> attribute allows you to specify 
+        a URL from which the user can fetch the necessary plug-in if it is not 
+        installed. This attribute is handled by your browser. If your browser 
+        cannot find the plug-in when loading your page, it will warn the user 
+        and allow them to bring up the specified URL, from which one could 
+        download QuickTime which includes the QuickTime 
+        Plug-In.<BR><BR><B>IMPORTANT:</B> Please set this attribute to: 
+        <CODE>"http://www.apple.com/quicktime/download/" </CODE>which will point 
+        to the latest version of the plug-in. This option is appropriate for 
+        QuickTime movies and QuickTime VR Objects and Panoramas.<BR><BR>For 
+        example:<BR><FONT color=#660000><BR>&lt;embed src="sample.mov" 
+        width="200" height="240" 
+        pluginspage="http://www.apple.com/quicktime/download/"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=qtnextn></A><B><CODE>QTNEXTn=<I>"URL"</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE><CODE>QTNEXT</CODE> can be used to specify the url of a 
+        movie to load and play at the end of the current movie. This allows up 
+        to 256 consecutive movies to play one after the other. This behaves 
+        exactly the same as if the movie has a HREF track with an auto-url 
+        ("A&lt;url&gt;") at the end of the movie. Where n is an integer greater 
+        than 0 and less than 256 that defines the index of the url in the 
+        playlist. A QTNEXT tag's value can be a url (and optional target) or 
+        GOTOn where "n" is the index of the QTNEXT url to load. This allows you 
+        to make an endlessly repeating playlist.<BR><BR><B>Note:</B> that the 
+        original movie (the SRC attribute) is implicitly QTNEXT0.<BR><BR><B>Note 
+        2:</B> The target T&lt;myself&gt; is normally specified. If no target is 
+        specified, the URL replaces the current browser window, and any 
+        subsequent <CODE>QTNEXT</CODE> statements are ignored.<BR>For 
+        example:<BR><FONT color=#660000><BR>&lt;EMBED SRC="nameof.mov" 
+        WIDTH="200" 
+        HEIGHT="240"<BR>QTNEXT1="&lt;http://www.apple.com/quicktime/movies/sample.mov&gt; 
+        T&lt;myself&gt;"<BR>QTNEXT2="&lt;rtsp://www.apple.com/quicktime/movies/sample.mov&gt; 
+        T&lt;myself&gt;"<BR>QTNEXT3="&lt;URL&gt; 
+        T&lt;myself&gt;<BR>QTNEXT4="GOTO0"</FONT> 
+          <P>See also: <CODE>TARGET</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=qtsrc></A><B><CODE>QTSRC=<I>"URL"</I></CODE></B> (optional...requires 
+      QuickTime 4) 
+      <BLOCKQUOTE>This attribute allows content developers to force a browser 
+        to use the QuickTime Plug-in for a file no matter what its MIME type is. 
+        The attribute treats it's value as a URL to load, and ignores any data 
+        loaded by the browser from the "src" parameter.<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;EMBED src="sample.mov" 
+        qtsrc="rtsp://www.apple.com/quicktime/sample2.mov"&gt;<BR></FONT><BR>This 
+        does not require the file type to be .mov. This can be any media type 
+        that QuickTime can read such as:<BR><BR><FONT color=#660000>&lt;EMBED 
+        src="sample.mov" 
+        qtsrc="rtsp://www.apple.com/quicktime/sample.mp3"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=qtsrcchokespeed></A><B><CODE>QTSRCCHOKESPEED</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>Using the <CODE>QTSRCCHOKESPEED</CODE> attribute gives 
+        content developers the ability to specify the datarate of a movie being 
+        served regardless of the connection speed an end user has. This may be 
+        useful when a particular movie is requested from a server by large 
+        volumes of users to eliminate congestion in routers.<BR><BR><B>Note:</B> 
+        When setting the choke speed, you will specify the maximum 
+        datarate.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="320" height="240" 
+        qtsrcchokespeed=33600&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=qtsrcdontusebrowser></A><B><CODE>QTSRCDONTUSEBROWSER</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE><CODE>QTSRCDONTUSEBROWSER</CODE> can either be set to TRUE 
+        or FALSE. By default, the behavior is set to FALSE. When set to true, 
+        the URL specified in the QTSRC parameter is loaded using QuickTime's 
+        internal methods, instead of using the browser to fetch the file. This 
+        prevents the browser from caching the file, which speeds access to local 
+        movies and can help prevent copying movies over the Web.<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;embed src="sample.mov" 
+        width="320" height="240" qtsrcdontusebrowser&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=scale></A><B><CODE>SCALE=<I>value</I></CODE></B> (optional...requires 
+      QuickTime 3) 
+      <BLOCKQUOTE><CODE>SCALE</CODE> is either <CODE>TOFIT,</CODE> 
+        <CODE>ASPECT</CODE> or a number. By default the value of 
+        <CODE>SCALE</CODE> is 1. If set to <CODE>TOFIT,</CODE> the movie is 
+        scaled to fit the embedded box as specified by the <CODE>HEIGHT</CODE> 
+        and <CODE>WIDTH</CODE> attributes. If this is set to 
+        <CODE>ASPECT,</CODE> the movie will scale to fit the embedded box while 
+        maintaining the aspect ratio. If this is set with a number, the movie 
+        will be scaled by that number (e.g. 1.5). Note: Using the number scale 
+        attribute with a QTVR Panorama movie can degrade the performance of the 
+        movie even on high-end systems.<BR><BR>For example:<BR><FONT 
+        color=#660000><BR>&lt;embed src="sample.mov" width="200" height="240" 
+        scale="tofit"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=src></A><B><CODE>SRC=<I>URL</I></CODE></B> (required) 
+        <BLOCKQUOTE>The <CODE>SRC</CODE> attribute defines the url to the file for 
+          the plugin or helper application to play. The <CODE>SRC</CODE> attribute 
+          is the most common way to embed the media, except for occasional instances 
+          where the <CODE>TYPE</CODE> attribute may be necessary.<BR>
+          <BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="200" 
+        height="240"&gt;</FONT> 
+          <P>See also: <CODE>TYPE</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=starttime></A><B><CODE>STARTTIME=<I>time</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>The <CODE>STARTTIME</CODE> attribute defines the first frame 
+        of the movie. <CODE>STARTTIME</CODE> can be any time within the length 
+        of the movie. By default, <CODE>STARTTIME</CODE> is the first frame of 
+        the movie (or 00:00:00). This attribute takes a time value in the form 
+        Hours:Minutes:Seconds:Frames (30ths). The frames component can be 
+        specified as a fixed point number so that more specific times can be 
+        specified for instance 3:30:22.5 means 3 minutes, 30 seconds and 22.5 
+        frames.<BR><BR><B>Note:</B> For fast start movies, the entire file is 
+        still downloaded even if a <CODE>STARTTIME</CODE> is 
+        specified.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+        starttime="00:15:22.5"&gt;</FONT> 
+          <P>See also: <CODE>ENDTIME</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=targetquicktimeplayer></A><B><CODE>TARGET="QUICKTIMEPLAYER"</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>When set, the QuickTime Plug-in will launch QuickTime Player 
+        as a helper application (if it is not already running) and opens the url 
+        of the movie file. In order for <CODE>TARGET="QUICKTIMEPLAYER"</CODE> to 
+        work, there needs to be an href attribute in the embed tag which points 
+        to the movie file.<BR><BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="poster.mov" width="200" height="240" 
+        href="sample.mov" target="quicktimeplayer"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=targetmyself></A><B><CODE>TARGET="MYSELF"</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>When set, the QuickTime Plug-in will replace the movie 
+        specified in the <CODE>SRC</CODE> parameter with the movie specified in 
+        the <CODE>HREF</CODE> attribute when a user clicks on the movie. In 
+        order for <CODE>TARGET="MYSELF"</CODE> to work, there needs to be an 
+        <CODE>HREF</CODE> attribute in the embed tag pointing to a media 
+        type.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="poster.mov" width="200" height="240" href="sample.mov" 
+        target="myself"&gt;</FONT></BLOCKQUOTE>
+        <P>See also: <CODE>HREF</CODE> 
+        <BLOCKQUOTE></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=targetn></A><B><CODE>TARGET<I>n="FRAME_NAME"</I></CODE></B> 
+      (optional...requires QuickTime 3) 
+        <BLOCKQUOTE><CODE>TARGET </CODE>is an optional attribute, used in conjunction 
+          with the <CODE>HOTSPOT</CODE> or <CODE>HREF</CODE> attributes. When 
+          set, the <CODE>TARGET </CODE>attribute is the name of a valid frame 
+          (including _self, _top, _parent, _blank or an explicit frame name) that 
+          will be the target of a link specified by the <CODE>HOTSPOT</CODE> or 
+          <CODE>HREF</CODE> attribute. Leaving TARGET unspecified will open the 
+          new file in the same place as the current movie.<BR>
+          <BR>For 
+        example:<BR><BR><CODE>HOTSPOT32="http://www.apple.com/quicktime" 
+        TARGET32="_blank"</CODE><BR><BR>would specify that when hotspot 32 is 
+        clicked, the QuickTime home page will load in a new 
+        window.<BR><BR>
+          <B>NOTE:</B> It is important to use the same ID# for both the HOTSPOT 
+          and TARGET for each URL reference. This ensures that the plug-in knows 
+          what <CODE>HOTSPOT</CODE> goes with what TARGET.</BLOCKQUOTE>
+      </TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=targetcache></A><B><CODE>TARGETCACHE=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>The <CODE>TARGETCACHE</CODE> attribute allows content 
+        creators to cache the movie the poster movie is 
+        targeting.<CODE>TARGETCACHE</CODE> is either <CODE>TRUE</CODE> or 
+        <CODE>FALSE.</CODE> By default, <CODE>TARGETCACHE</CODE> is 
+        <CODE>FALSE.</CODE><BR><BR>For example:<BR><FONT 
+        color=#660000><BR>&lt;embed src="poster.mov" width="200" height="240" 
+        cache="true" href="sample2.mov" TARGET="myself" 
+        targetcache="true"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=tilt></A><B><CODE>TILT=<I>integer</I></CODE></B> (optional...requires 
+      QuickTime 3) 
+      <BLOCKQUOTE>The <CODE>TILT</CODE> attribute allows you to specify the 
+        initial tilt angle for a QuickTime VR movie. Only integer values are 
+        supplied for this attribute. The range of values for a typical movie 
+        would be -42.5 to 42.5 degrees. If no value for <CODE>TILT</CODE> is 
+        specified, the value stored in the movie is used. This attribute has no 
+        meaning for a standard QuickTime movie.<BR><BR>For example:<BR><BR><FONT 
+        color=#660000>&lt;embed src="sample.mov" width="320" height="240" 
+        tilt="20.0"&gt;</FONT> 
+          <P>See also: <CODE>FOV</CODE>, <CODE>NODE</CODE>, <CODE>PAN</CODE></P>
+        </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=typemimetype></A><B><CODE>TYPE="MIMEtype"</CODE></B> (optional) 
+      <BLOCKQUOTE><CODE>TYPE="MIMEtype"</CODE> specifies the MIME type of the 
+        EMBED file, which in turn determines which plug-in to load. Use the TYPE 
+        attribute for a plug-in that requires no data, for example, a plug-in 
+        that draws an analog clock or fetches all of its data dynamically. For a 
+        visible plug-in, you must include both the <CODE>WIDTH</CODE> and 
+        <CODE>HEIGHT</CODE> attributes if you use TYPE; no default values are 
+        used.<BR><BR><B>Note:</B> The functionality of this attribute is only 
+        supported by Netscape Navigator, version 2.0 or later.<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;embed src="sample.mov" 
+        type="video/quicktime" width="200" 
+  height="240"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=urlsubstitute></A><B><CODE>URLSUBSTITUTE="&lt;String&gt;:&lt;SubstituteURL&gt;</CODE></B> 
+      (optional...requires QuickTime 4) 
+      <BLOCKQUOTE>Replaces every instance of String with SubstituteURL inside 
+        any HREF tracks, sprite action URLs, or VR hotspot URLs. Both String and 
+        SubstituteURL must be surrounded by angle brackets, and the two must be 
+        separated by a colon. The value n may be any integer from 1 to 999, and 
+        may be omitted if only one URLSUBSTITUTE parameter is specified. Use 
+        this parameter to repurpose QuickTime movies with embedded URLs without 
+        editing the movies.<BR>For example:<BR><FONT color=#660000><BR>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+        urlsubstitute="&lt;samplestring&gt;:&lt;http://dns/foo.mov"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A 
+      name=volume></A><B><CODE>VOLUME=<I>value</I></CODE></B> 
+      (optional...requires QuickTime 3) 
+      <BLOCKQUOTE>The <CODE>VOLUME</CODE> attribute sets the movie's initial 
+        audio volume. Only integer values between 0 through 100 are applied for 
+        this attribute. By default, <CODE>VOLUME</CODE> is set to 100. A setting 
+        of 0 effectively mutes the audio whereas a setting of 100 is the maximum 
+        volume.<BR><BR>For example:<BR><BR><FONT color=#660000>&lt;embed 
+        src="sample.mov" width="200" height="240" 
+      volume="50"&gt;</FONT></BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left><A name=width></A><B><CODE>WIDTH=<I>size in 
+      pixels</I></CODE></B> (required) 
+      <BLOCKQUOTE>The <CODE>WIDTH</CODE> attribute specifies the 
+        <CODE>WIDTH</CODE> of the embedded file in pixels. The 
+        <CODE>WIDTH</CODE> of the movie can be found by choosing 'Get Info...' 
+        in the 'Movie' menu within QuickTime Player.<BR><BR>For 
+        example:<BR><BR><FONT color=#660000>&lt;embed src="sample.mov" 
+        width="200" height="240"&gt;<BR></FONT><BR>
+          See also: <CODE>HEIGHT</CODE></BLOCKQUOTE>
+      </TD></TR></TBODY></TABLE>
+</CENTER>
+</BODY></HTML>

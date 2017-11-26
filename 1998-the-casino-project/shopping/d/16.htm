@@ -1,0 +1,27 @@
+<head>
+<title>Randon_frame and page_tester</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+	function loadMeUp(){
+	for (count=0; count < 4; count++)
+	{
+	PageName = ""
+	randomPage = ""
+	frameNum = ""
+	
+	randomPage = Math.round(Math.random() * 25)
+	frameNum = Math.round(Math.random() * 11)
+	PageName = randomPage + ".htm"
+	
+	parent.frames[frameNum].location=PageName
+	}
+	}
+	
+	
+// -->
+</script>
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<a href="#" onClick="loadMeUp()">click me! (16)</a>
+</body>

@@ -1,0 +1,49 @@
+<head>
+<title>96</title>
+<script language="JavaScript">
+	function randomPhrase() {
+
+// a function that generates randoms in a range, 
+//then loads them into one document using write.method
+
+// doesn't work in Netscape 4 yet?!?!
+ 	
+	myWord = new Array (15);
+	
+	myWord[0] = "going down";
+	myWord[1] = "playing";
+	myWord[2] = "fiddling";
+	myWord[3] = "shopping";
+	myWord[4] = "burning";
+	myWord[5] = "while";
+	myWord[6] = "Nero";
+	myWord[7] = "the ship";
+	myWord[8] = "Rome";
+	myWord[9] = "she";
+	myWord[10] = "he";
+	myWord[11] = "goes down";
+	myWord[12] = "fiddles";
+	myWord[13] = "burns";
+	myWord[14] = "shops";
+	myWord[15] = "plays";
+	
+
+	myFirst = Math.round(Math.random()* 4)
+	mySecond = Math.round(Math.random()* 4) + 6
+	myThird = Math.round(Math.random()* 4) + 11
+		
+		
+	document.write( myWord[myFirst]);
+	document.write("<br>" + myWord[5]);
+	document.write("<br>" + myWord[mySecond]);
+	document.write("<br>" + myWord[myThird]);
+	
+	}
+	
+		
+	</script>
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" onLoad="randomPhrase()" onReload="randomPhrase()">
+
+</body>

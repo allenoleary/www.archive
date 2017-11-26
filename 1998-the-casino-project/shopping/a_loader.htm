@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>19_offstage_loader</TITLE>
+
+<SCRIPT language="JavaScript">
+
+function playWAV(){
+for (count=0; count<10; count ++)
+{
+window.location.href="tickone1.wav"}
+}
+
+function randomPhrase() {
+
+// this page is the random phrase maker that writes a central line, it's run
+// in the 'offstage panel' of the frame...
+
+
+	myFirst = Math.round(Math.random()* 4);
+	mySecond = Math.round(Math.random()* 4) + 6;
+	myThird = Math.round(Math.random()* 4) + 11;
+		
+	fileFirst = myFirst + ".htm";
+	fileSecond = mySecond + ".htm";
+	fileThird = myThird + ".htm";
+	
+	top.frames['1'].location = fileFirst;
+	top.frames['4'].location = "5.htm";
+	top.frames['7'].location = fileSecond;
+	top.frames['10'].location = fileThird;}
+	
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="#FFFF00" text="#000000" onLoad="randomPhrase()" link="#000000" vlink="#000000" alink="#000000">
+<table border="0" width="150" align="center" cellspacing="5">
+  <tr>
+    <td> 1 of 4: <a href="#" onClick="randomPhrase()">Look</a> <a href="b/b_loader.htm" target="offstage">Buy</a> 
+    </td>
+  </tr>
+</table>
+</BODY>
+</html>

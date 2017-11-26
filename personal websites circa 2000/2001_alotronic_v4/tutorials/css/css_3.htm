@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Style Sheets 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0" height="1899">
+  <tr> 
+    <td> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Style 
+        Sheets 3: Three Ways of formatting style information</b></font></p>
+      <p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The Idea</font></b></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">CSS has three 
+        ways of inserting tyle information, at tag level, embedded style sheet 
+        and external or linked style sheet level</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Tag Level</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">At this level 
+        you just write the style information into the tag itself:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;P style=&quot;color:#44444; 
+        left-margin:100px; right-margin:100px&quot;&gt;</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">THis is a 
+        good quick way of applying a style to a single element, but has the disadvantage 
+        of not being applied document wide, which means lots of code editing to 
+        make changes.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Embedded 
+        STyle SHeet</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This is what 
+        we did last week, where the style declaration sits in the head of the 
+        document:</font></p>
+      <blockquote> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;html&gt;<br>
+          &lt;head&gt;<br>
+          &lt;title&gt;Style Sheet Example&lt;/title&gt; <br>
+          &lt;style type=&quot;text/css&quot;&gt;<br>
+          &lt;!--<br>
+          body { background-color: #FFFFCC; margin-top: 18px; margin-right: 100px; 
+          margin-left: 100px}<br>
+          p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; 
+          color: #000033; line-height: 150%} <br>
+          h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 
+          20px; font-weight: bold; color: #000033}<br>
+          --&gt;<br>
+          &lt;/style&gt;<br>
+          &lt;/head&gt;</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;body 
+          bgcolor=&quot;#FFFFFF&quot;&gt;</font></p>
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> &lt;h1&gt;This 
+          is a normal heading&lt;/h1&gt;<br>
+          &lt;p&gt;This is just paragraph text and shows how the margin for the 
+          whole page is controlled as well as how the line-height has been altered 
+          as well to 150%&lt;/p&gt;<br>
+          &lt;p&gt;This is another paragraph.&lt;/p&gt;</font></p>
+        <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> &lt;/body&gt;<br>
+          &lt;/html&gt;</font></p>
+      </blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Linked 
+        style sheets</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">THis is where 
+        we store the style sheet as a text file and link to it. THis means that 
+        we can update a whole site at once, just by changing one text document.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Here's how:</font></p>
+      <ol>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">From 
+            last week cut the style declaration out of one of your documents (everything 
+            between the &lt;style&gt; tags)</font></p>
+        </li>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Paste 
+            the text into a new simpletext document.</font></p>
+        </li>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Save 
+            the new document with a name and the .css extention</font></p>
+        </li>
+        <li> 
+          <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In your 
+            orginal document you need to place the following code inbetween the 
+            &lt;head&gt; tags:<br>
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;filename.css&quot;&gt;</font></p>
+        </li>
+      </ol>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This will 
+        force the browser to load the one style sheet for every document you put 
+        this line of code in. Making changes to the style sheet will affect all 
+        the files that link to it.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>More formatting; 
+        the custom class and the &lt;span&gt; tag.</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">When you 
+        want to make a style declaration for something out of the ordinary, or 
+        to make a custum format for a special set of formatting (like a 'copyright' 
+        notice) you can make a new class.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">In your style 
+        sheet you make a new class by adding the .classname declaration (where 
+        classname can be anything you like). For instance:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;style 
+        type=&quot;text/css&quot;&gt;<br>
+        &lt;!--<br>
+        p { color:#FFFFFF; font-size: medium }<br>
+        .red {color:#CC0066}<br>
+        .small {font-size:small }<br>
+        //--&gt;<br>
+        &lt;/style&gt;</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This means 
+        that you can make any text &quot;red&quot; by using the span tag:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;P&gt;THis 
+        text is the paragraph color&lt;span class=&quot;red&quot;&gt; but this 
+        bit is red&lt;/span&gt; and this is normal again.&lt;/P&gt;</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You can also 
+        apply a class to a whole paragraph at once:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;p class=&quot;red&quot;&gt;Now 
+        all the text will be red&lt;/p&gt;</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This power 
+        to format a whole paragraph at once means you can make special paragraphs 
+        for, say, those copyright information blocks you sometimes see at the 
+        bottom of a page:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">.copyright 
+        { font-size: smallest; text-align: center; border: solid thin #CC3366 
+        }</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Then apply 
+        the style to a paragraph:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&lt;p class=&quot;copyright&quot;&gt;This 
+        document remains the property of me (sure...)&lt;/p&gt;</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>The Pseudo 
+        Classes</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This is just 
+        a fancy way of talking about specifying the link, vlink, alink properties:</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">A:link {color: 
+        blue; text-decoration:none}<br>
+        A:active {color: red; text-decoration:none}<br>
+        A:visited {color: black; text-decoration:none}</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">There's also 
+        'A:hover' which changes the link when you roll over it (a roll-over without 
+        having to use images). Also note that using 'text-decoration: none' will 
+        remove the underline from your links.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="ccs_exercise.htm">Have 
+        a go at this exercise</a></font></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

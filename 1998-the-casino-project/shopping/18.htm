@@ -1,0 +1,27 @@
+<head>
+<title>18</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+	function loadMeUp(){
+	for (count=0; count < 4; count++)
+	{
+	PageName = ""
+	randomPage = ""
+	frameNum = ""
+	
+	randomPage = Math.round(Math.random() * 41)
+	frameNum = Math.round(Math.random() * 11)
+	PageName = randomPage + ".htm"
+	
+	parent.frames[frameNum].location=PageName
+	}
+	}
+	
+	
+// -->
+</script>
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:149px; height:149px; z-index:1"><a href="#" onClick="loadMeUp()"><img src="shop_images/hand.JPG" width="150" height="150" border="0"></a></div>
+</body>

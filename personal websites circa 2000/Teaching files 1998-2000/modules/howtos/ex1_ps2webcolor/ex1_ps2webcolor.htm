@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Getting Images 
+  for the web out of Photoshop</b></font> </p>
+
+<blockquote> 
+  <p><b><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Structure of 
+    the file types and uses</font></b></p>
+</blockquote>
+<ul>
+  <blockquote>
+    <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>gifs: </b>Usually 
+      used for 'flat color' and crisp-edged graphics. Also where animation and 
+      transparency are required.</font></p>
+    <ul>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">max 256 colors</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"> support transparency</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"> animation</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"> lossless compression</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">uses indexed 
+	color palettes to select colors from original image</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">interlacing 
+	ability</font></li>
+    </ul>
+    <p>&nbsp;</p>
+    <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>jpegs: </b>Usually 
+      used for soft-edged images, particularly photos where the compression algorithm 
+      works wonders on file sizes.</font></p>
+    <ul>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"> max 16.4 million 
+	colors</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">lossy compression 
+	(throws picture information away)</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">compresses 
+	on a percentage basic</font></li>
+      <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">progressive 
+	ability</font></li>
+    </ul>
+    <p>&nbsp;</p>
+  </blockquote>
+</ul>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Photoshop and Web 
+  Imaging</b></font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Thankfully Photoshop 
+    5 has web palettes built in! If you have Photoshop 5.5 or above you get 'Image 
+    Ready' with it which functions much like Fireworks and has much finer control 
+    over sizing and options. However for this exercise we'll assume you've just 
+    got PS 5</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Getting gifs:</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">1. You must convert 
+  your file to indexed color before you export it (Image/Mode menu)</font></p>
+<blockquote> 
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">You'll get a dialog 
+    box like this:</font></p>
+  <p align="center"> <font face="Verdana, Arial, sans-serif, Tahoma" size="2"><img src="gif_index_pal.gif" width="359" height="229"></font></p>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">In the Palette Menu 
+    the three choices we're concerned with are:</font></p>
+  <ol>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>exact </b>- 
+      if there's less than 256 colors in the source image use this to force exactly 
+      the same colors into the gif</font></li>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>web</b> - 
+      forces the palette in the 216 web-safe color palette</font></li>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>adaptive </b>- 
+      chooses the best 256 colors in the image with no concessions to the web</font></li>
+  </ol>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">As you select each 
+    one, you'll see your image change considerably. If you've made the effort 
+    to design the graphic with web-safe colors, use web or exact. Adaptive gives 
+    the best results, but may look bad on older systems.</font></p>
+  <p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The Dither options 
+    relate to how PS mixes the colors together if the image is very complex and 
+    uses a lot more that 256 colors. Try selecting some of these options to preview 
+    the results. This can be very messy. If you're using an image with this many 
+    colors and you don't need transparency or animation, convert it to a jpeg 
+    instead.</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">2. Use &quot;Save 
+  as...&quot; to save the current image as a gif</font></p>
+<ul>
+  <ul>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Select &quot;CompuServe 
+      GIF&quot; from the drop down menu. (CompuServe own the algorithym)</font></li>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Give it a file 
+      name and <b><font color="#FF0000">make sure you add the right extension 
+      (filename.gif)</font></b></font></li>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Click OK.</font></li>
+    <li><font face="Verdana, Arial, sans-serif, Tahoma" size="2">Yet another dialog 
+      box will appear asking you whether you want 'Normal'or 'Interlaced' row 
+      order. If you select 'Interlaced' the image will appear in chunks which 
+      define over time. This adds a little file size and isn't widely used today 
+      as modems are much faster than they were. Click OK.</font></li>
+  </ul>
+</ul>
+<hr noshade width="50%">
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><b>Getting jpegs:</b></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">1. You must convert 
+  your file to RGB before saving as a jpeg (Image/Mode menu)</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">2. Use &quot;Save 
+  As...&quot; to give the file a name and location. <font color="#FF0000"><b>Again 
+  it's VERY important to add the .jpg file extension to the image name. </b></font>Don't, 
+  whatever you do, save over your original as you will lose that information for 
+  ever... </font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">3. Now you'll be presented 
+  with the compression dialog box:</font></p>
+<p align="center"><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><img src="jpeg_save_pal.gif" width="302" height="231"></font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The best setting for 
+  quality is usually 8. This gives a good balance between file size and quality. 
+  The file exported at 8 will typically be half the size of one exported at 10, 
+  and will look almost identical.</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">The 'progressive' 
+  option modes the image 'fade in', again, not used much these days, so leave 
+  it at baseline.</font></p>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2">3. Click OK</font></p>
+<hr noshade>
+<p><font face="Verdana, Arial, sans-serif, Tahoma" size="2"><a href="javascript:history.back(1)">&lt;&lt; 
+  back</a></font></p>
+</body>
+</html>

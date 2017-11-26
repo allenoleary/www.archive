@@ -1,0 +1,69 @@
+
+
+<html>
+<head>
+	
+	
+	<script type="text/javascript" language="JavaScript">
+
+//my little functions for use in the casino projects
+
+function CheckCount () {
+
+var myCount=GetCookie('WWHCount')
+//return myCount
+	if (myCount >=66)
+	window.document.location = "18.htm" 
+}
+
+//this one is for debugging so i can set the counter back!
+
+function zeRo() {
+	
+	SetCookie ('WWHCount', 0, exp)
+	document.location = "40.htm"
+
+	}
+	
+//this is the standard four loader for the casino project
+
+function loadMeUp(){
+
+	for (count=0; count < 4; count++)
+	{
+	PageName = ""
+	randomPage = ""
+	frameNum = ""
+	
+	randomPage = Math.round(Math.random() * 41)
+	frameNum = Math.round(Math.random() * 11)
+	PageName = randomPage + ".htm"
+	
+	parent.frames[frameNum].location=PageName
+	}
+}
+
+
+</script>
+
+</HEAD>
+
+
+<BODY BGCOLOR="#ffffff" link="#CC0033" vlink="#333399" alink="#FF0000" onLoad="CheckCount()">
+<a href="javascript:LoadMeUp()"><img src="shop_images/hand.jpg" width=150 height=100 border=0 alt="" ></a>
+
+<script language="JavaScript">
+<!-- Hide this script from old browsers --/*
+   
+document.write("<table width=100%><tr><td align=center><H1>" + Count() + "</H1></td></tr></table>")
+document.write('<a href="JavaScript:zeRo()">reset</a>')
+document.write('<a href="Javascript:LoadMeUp()">go</a>41')
+
+// -- End Hiding Here -->
+</script>
+
+
+
+
+
+</BODY></HTML>

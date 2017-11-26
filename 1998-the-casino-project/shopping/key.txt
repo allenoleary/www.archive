@@ -1,0 +1,183 @@
+// a function which loads up random frames with random pages
+
+<script language="JavaScript">
+<!--
+	function loadMeUp(times){
+	for (count=0; count < times; count++)
+	{
+	PageName = ""
+	randomPage = ""
+	frameNum = ""
+	
+	randomPage = Math.round(Math.random() * 19)
+	frameNum = Math.round(Math.random() * 11)
+	PageName = randomPage + ".htm"
+	
+	parent.frames[frameNum].location=PageName
+	}
+	}
+//-->
+</script>
+
+
+
+
+// a function which loads spefic frames from the first 15 into specific frames
+
+	<script language="JavaScript">
+	function randomPhrase() {
+
+	myFirst = Math.round(Math.random()* 4);
+	mySecond = Math.round(Math.random()* 4) + 6;
+	myThird = Math.round(Math.random()* 4) + 10;
+		
+	fileFirst = myFirst + ".htm";
+	fileSecond = mySecond + ".htm";
+	fileThird = myThird + ".htm";
+	
+	parent.frames(4).location=fileFirst;
+	parent.frames(5).location="5.htm";
+	parent.frames(6).location=fileSecond;
+	parent.frames(7).location=fileThird;
+
+		
+}
+	
+		
+	</script>
+
+
+
+// afunction which uses page variables to assemble the same phrase as above, but in pone frame
+
+
+
+
+
+
+// a flicker function (timeouts dont wrok!)
+
+
+<script language="javaScript">
+
+function flicker(){
+
+for (count=0; count < 100; count++){
+    document.bgColor = "black";
+	setTimeout("nothing()", 5000);
+	document.bgColor = "white";
+	setTimeout("nothing()", 5000);
+	}
+}
+	
+
+</script>
+
+
+
+// a function that write a phrase from an array...
+
+<script language="JavaScript">
+	function randomPhrase() {
+
+// a function that generates randoms in a range, then loads them into one document using write.method
+ 	
+	myWord = new Array (15);
+	
+	myWord[0] = "going down";
+	myWord[1] = "playing";
+	myWord[2] = "fiddling";
+	myWord[3] = "shopping";
+	myWord[4] = "burning";
+	myWord[5] = "while";
+	myWord[6] = "Nero";
+	myWord[7] = "the ship";
+	myWord[8] = "Rome";
+	myWord[9] = "she";
+	myWord[10] = "he";
+	myWord[11] = "goes down";
+	myWord[12] = "fiddles";
+	myWord[13] = "burns";
+	myWord[14] = "shops";
+	myWord[15] = "plays";
+	
+
+	myFirst = Math.round(Math.random()* 4)
+	mySecond = Math.round(Math.random()* 4) + 6
+	myThird = Math.round(Math.random()* 4) + 11
+		
+		
+	document.write( myWord[myFirst]);
+	document.write("<br>" + myWord[5]);
+	document.write("<br>" + myWord[mySecond]);
+	document.write("<br>" + myWord[myThird]);
+	
+	}
+	
+		
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17 blue sea			'phrase maker grid need more white here!
+18 blue stop hand		'random 0-29
+19 phrase maker...  'phrase maker line, passes to 17.htm after three hits...
+20 tracker... for phase one... 
+
+PHASE TWO
+
+21 currently phrase maker, needs to be kickoff phase two er
+22 Chanel reverse... 		'layer fx
+23 CK1 bottle 			'falling down on rollover
+24 dolce & gabana		'no effect
+25 DYNK 			'no effect
+26 DKNY hands			'mouse trace on rollover
+27 Mossimo			'shiver on load
+28	Blank white
+29 lauf				'animated gif
+30 twirl			'circle on load
+31-39 white blanks
+
+40 tracker hand			'checks and increments cookie, passing control to page ?
+41 Ditto
+
+96 Tester for document.write phrase maker...
+97
+98
+99

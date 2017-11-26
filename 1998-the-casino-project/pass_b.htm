@@ -1,0 +1,77 @@
+<HTML>
+<!-- This document was created with HTMLed        -->
+<HEAD>
+<TITLE>Document Title</TITLE>
+<STYLE>
+	P, H1, H2, A:link, A:visited
+		 {font-family: Univers, Helvetica, Arial, sans-serif;
+		color: aliceblue;
+		font-weight: 600;
+		font-size: 12pt;
+		line-height: auto;
+		margin: 1px;
+		padding: 15px;
+		background-color: transparent;
+		background-attachment: fixed;
+		background-repreat: repeat;
+		width: 295px;}
+
+	H1 {font-size: 15pt;
+		letter-spacing: 6px;}
+
+	H2 {color: yellow;
+		font-size: 15pt;
+		letter-spacing: 3px;}
+
+	EM {text-transform: capitalise}
+
+	A:link {color: aliceblue;
+		background-color: black;
+		text-decoration: underline;}
+
+	A:visited (color: black;
+		background-color: aliceblue;
+		text-decoration: none;}
+
+
+</STYLE>
+
+<SCRIPT language="JavaScript">
+
+function tunnelEntry()
+{
+parent.frames['C'].location="flyovera.htm";
+parent.frames['D'].location="flyoverb.htm";
+parent.frames['B'].location="blank.htm";
+parent.frames['A'].location="blank.htm";
+}
+
+function timer() 
+{
+setTimeout('tunnelEntry()', 8000)
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR='black' onLoad="timer()">
+
+<DIV  STYLE="position: absolute; left: 0px; top: 185px"> <IMG SRC="caution.gif" WIDTH="299" HEIGHT="12"> 
+</DIV>
+
+
+<DIV  STYLE="position: absolute; left: 0px; top: 0px">
+<IMG SRC="road.gif" WIDTH="90" HEIGHT="200">
+</DIV>
+
+<DIV  STYLE="position: absolute; left: 80px; top: 125px">
+<P> <A HREF="blank.htm" onClick="tunnelEntry()"> The road... </A>
+</DIV>
+
+
+
+
+
+</BODY>
+</HTML>

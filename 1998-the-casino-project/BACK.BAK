@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+  <!-- Created with AOLpress/2.0 -->
+  <TITLE>amore_casino</TITLE>
+
+<STYLE>
+	P, H1, H2, A:link, A:visited
+		 {font-family: Univers, Helvetica, Arial, sans-serif;
+		color: aliceblue;
+		font-weight: 600;
+		font-size: 12pt;
+		line-height: 17pt;
+		margin: 1px;
+		background-color: transparent;
+		background-attachment: fixed;
+		background-repreat: repeat;
+		width: 280px;}
+
+	A:link {color: orange;
+		font-size: 50pt;
+		font-weight: 400;}
+
+	H2 {color: aliceblue;
+		font-size: 12pt;}
+
+	EM {text-transform: capitalise}
+
+
+
+
+</STYLE>
+
+<SCRIPT language="JavaScript">
+function goBack()
+{
+window.history.back(2)
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR=black>
+
+<DIV  STYLE="position: absolute; left: 50px; top: 130px">
+<A HREF="c:\\aliens\home.htm"  onClick="goBack()">exit</A>
+</DIV>
+
+<DIV  STYLE="position: absolute; left: 330px; top: 220px">
+<IMG SRC="laney.gif" WIDTH="25" HEIGHT="75">
+</DIV>
+
+
+
+<DIV  STYLE="position: absolute; left: 180px; top: 65px">
+<P>`A Speed Thing'
+<P>Come back in November to see the rest! Any comments, or if you want an email when it's finished, let me know...
+<P><A HREF="mailto:alotronic@hotmail.com"><H2>alotronic@hotmail.com</H2></A>
+
+</DIV>
+
+<DIV  STYLE="position: absolute; left: 350px; top: 290px">
+<IMG SRC="laney.gif" WIDTH="50" HEIGHT="150">
+</DIV>
+
+
+
+
+
+</BODY></HTML>
+

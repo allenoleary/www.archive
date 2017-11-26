@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>index.htm</title>
+</head>
+<body background="big sky.gif" text="ffffff">
+<a name ="repeat"</a>
+<table border="8" height="40%" width="100% align="center">
+<tr>
+<td background="editorial.gif" align="center">conceptual?</td>
+<td>simpleton?</td>
+</tr>
+<tr>
+<td>conservative?</td>
+<td>anarchist?</td>
+</tr>
+</table>
+<p align="center"><font face="cyberspeak,verdana,sans serif"  size="5" color="ff4500">
+CHOOSE YOUR FUTURE </p>
+</body>
+</html>

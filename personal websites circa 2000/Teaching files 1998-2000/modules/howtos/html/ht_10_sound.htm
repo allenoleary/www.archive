@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>SoundTags</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="sss">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="595" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> 
+      <p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Basic 
+        Sound in Dreamweaver </font></b></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">As there 
+        are no html tags to place sounds into WebPages, all the approaches use 
+        JavaScript and (often) the &lt;embed&gt;tag to get sound into html pages. 
+        The very easiest to incorporate a background sound track is actually to 
+        use a flash movie with sound only in it and embed it on the page with 
+        a little code to check if the Flash player is present. You can also insert 
+        code that will specifically address the Windows Media Player, or the Netscape 
+        Live Audio plugin, but these are obviously biased in favour of operating 
+        systems and browsers. There are several approaches to getting sound into 
+        the events of your page across all browsers: </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Basic 
+        Linking: </b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Using a 
+        link to a sound file in a Url instead of a page should pass the sound 
+        file to the default player of the browser. This will mean the browser 
+        will pop-up a player in it's own window to handle the sound. If it's in 
+        a non-streaming format, the whole file will have to download before it 
+        plays. Note: Depending on how you have the browser setup and what plugins 
+        are available, this linking method may take you to another page, which 
+        then plays the file… </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Exercise: 
+        · Download a common file format sound file (.au or .aif for Mac) and save 
+        it into your working folder.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Make a new 
+        web page, make a link to the sound file &lt;a href=&quot;sound.wav&quot;&gt;Get 
+        sound&lt;/a&gt; </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="sound.wav">Play 
+        Sound</a></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">View the 
+        file in IE and NS to see the different players. </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Basic 
+        Embedding: </b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">To avoid 
+        the floating window, you have to embed the file. You still get the player 
+        window, but it no longer floats. </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Use the 
+        &lt;embed&gt; tag.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">&lt;embed 
+        src=&quot;sound.au&quot; width=&quot;144&quot; height=&quot;60&quot;&gt; 
+        </font></p>
+      <p><embed src="sound.wav" width="144" height="60" autoplay="false" loop="true"> </embed>
+      
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"> The size 
+        is 144px and height 60px. This accommodates the control panels of the 
+        major browsers players.</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">View the 
+        file in IE and NS to see the different players (control click the players 
+        to see further options) </font></p>
+      <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Streaming 
+        Audio (MP3's and Real Audio) and alternative players (like Beatnik) </b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">File formats 
+        that are not handled by the Default Player can lead to all sorts of problems. 
+        Players are getting better at handling MP3's and so forth, but you have 
+        to rely on the user having the correct player loaded. For instance this 
+        embed works on my PC at home because it is handled my Windows Media Player 
+        7, but may give you nothing today depending what is installed on the lab 
+        Macs...</font></p>
+      <p><embed src="schubert.mp3" width="144" height="60">
+        </embed></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">The following 
+        points I'm not going to cover in class, but read on if you want: Real 
+        Audio You need to make sure you're set up properly, see www.real.com for 
+        details</font></p>
+      <ul>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">the user 
+          must have the plugin</font></li>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">you need 
+          the sound encoder (Real Player producer, which will cost you a little)</font></li>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">you need 
+          the server set up to recognise the MIME type · you need to include a 
+          metafile to point the player to a Real Audio server MP3's Usually MP3's 
+          are just passed across the internet as downloads, which are then played 
+          by a MP3 player like winamp or sonique. </font></li>
+      </ul>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">The popularity 
+        of MP3 is that the downloads are very compressed but have excellent quality 
+        - a 3 minute CD quality .wav file is around 40Meg, whereas a similar MP3 
+        file is about 4-7 meg. www.mp3.com is as good a place as any to start. 
+        </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Real 
+        Audio</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Real Audio 
+        is streamed and served by an application that costs a bit of cash. THis 
+        tends to mean that it's only enthusiasts who go for it. It's not a bad 
+        format, particularly good for streaming live events. This means that most 
+        Net Radio is handled with Real Audio. It also has the ugliest player going!</font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Beatnik 
+        Player </b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">A small 
+        but interesting player by head Space (Thomas Dolby's company) Beatnik 
+        can play system sounds without any file downloads and without the tinny 
+        sounds of midi. It uses it's own set of files in the player (groovoids) 
+        which are called by the player as needed, and can play as many as 8 different 
+        files at the same time. If you want to really get into web sound, Beatnik 
+        can be explored further at www.headspace.com </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="javascript:history.back(1)">&lt;&lt; 
+        Back </a></font></p>
+      <blockquote>&nbsp;</blockquote>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
