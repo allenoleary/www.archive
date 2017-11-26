@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allen O'Leary - Showcase: TSN</title>
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,100,300,500,700|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/aol.css" />
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/CSSRulePlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/ColorPropsPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/EaselPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/TextPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/ScrollToPlugin.min.js"></script>
+
+
+<script>
+
+var winwidth = window.matchMedia("screen and (min-width: 800px)")
+
+if (winwidth.matches){ 
+ window.onload = function() {
+  
+
+  var image1 = document.getElementById('imageOne');
+  var image1Btn = document.getElementById('leftImage');
+  var image2Btn = document.getElementById('rightImage');    
+  var image2 = document.getElementById('imageTwo');
+  
+  var contactBtn = document.getElementById('btnContact');
+    var contactOffBtn = document.getElementById('btnOffContact');
+   var contactDiv = document.getElementById('thisContact');
+   var closeContact = document.getElementById('closeModal');
+
+
+  
+  //var topSwipe = document.getElementById('swipe');
+
+  
+  // set gsap tweens up
+
+  //run on page load - fade in images
+  imgSizer = TweenMax.to(image1,4, {opacity: 1, delay: 1});
+  imgSizer2 = TweenMax.to(image2,6, {opacity: 1, delay: 1.5});
+  //run on roll over images
+  imgWipe1  = TweenMax.to(image1,1, {scale: 1.5, paused: true, boxShadow:"0px 0px 30px 20px #4DD2FF", zIndex:"1000", left: "100px", top: "30%"});
+  imgWipe2  = TweenMax.to(image2,2, {scale: 1.5, paused: true, boxShadow:"0px 0px 30px 20px #00D9A3", zIndex:"1000", left: "0", top: "30%"});
+    imgWipe35  = TweenMax.to(image2Btn,2, {opacity: 0, paused: true});
+  shiftLeft = TweenMax.to(image1Btn,3, {left: "+=200", paused: true});
+  shiftRight = TweenMax.to(image2Btn,3, {right: "+=200", paused: true});
+  
+  showContact = TweenMax.to(contactDiv,1, {height:"260px", display: "inline", opacity:1, paused: true});
+  showModal = TweenMax.to(closeContact,1, {height:"90px", display: "inline", opacity:1, paused: true, delay: 2});
+
+
+
+image1Btn.onmouseover = function() {
+  imgWipe1.play();
+  shiftLeft.play();
+    imgWipe35.play();
+}
+
+image1Btn.onmouseout = function() {
+  imgWipe1.reverse();
+  shiftLeft.reverse();
+    imgWipe35.reverse();
+
+}
+
+image2Btn.onmouseover = function() {
+  imgWipe2.play();
+  shiftRight.play();
+}
+
+image2Btn.onmouseout = function() {
+  imgWipe2.reverse();
+  shiftRight.reverse();
+
+}
+
+contactBtn.onclick = function() {
+  showContact.play();
+    showModal.play();
+
+}
+
+contactOffBtn.onclick = function() {
+ showContact.reverse();
+   showModal.reverse();
+
+
+}
+
+}
+
+
+
+}
+
+else {
+
+document.write("<style> #leftImage img, #rightImage img{opacity:1;filter:alpha(opacity=1);</style>");
+
+}
+
+</script>
+ 
+</style>
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body class="casestudy">
+  
+  <div class="contain-to-grid sticky" data-options="sticky_on: large">
+  <nav class="top-bar" data-topbar> <ul class="title-area"> <li class="name"> <h1><a href="index.html">Allen O'Leary</a></h1> </li> <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> </ul> <section class="top-bar-section">
+   <!-- Right Nav Section --> <ul class="right"> 
+    <li class="has-dropdown"><a href="what-i-do.html">What I do</a>
+    <ul class="dropdown"> 
+					    <li><a href="digicomms.html">Digicomms and Management</a></li> 
+					   <li><a href="ia-ux-content.html">IA, UX, Content Strategy</a></li>
+					   <li><a href="design-build.html">Complete site design and build</a></li>
+					 
+		   </ul> 
+		  </li>
+    <li class="has-dropdown"> <a href="case-studies.html">My work</a>
+		    <ul class="dropdown">
+            <li><a href="showcase.html">Design showcase & client list</a></li>  
+					   <li><a href="dec.html">The DEC - Project Management - Case Study</a></li>
+					   <li><a href="sanger.html">The Sanger - IA, UX, UI - Case Study</a></li>
+					   <li  class="active"><a href="tsn.html">Teacher Support - Drupal site - Cas Study</a></li> 
+             <li><a href="cv.html">Complete CV</a></li> 
+		   </ul> 
+   </li>
+   <!--<li><a href="#">Articles</a></li>-->
+   <script>
+
+var winwidth = window.matchMedia("screen and (min-width: 64.063em)");
+
+if (winwidth.matches){ 
+
+ document.write("<li><a href='#'' id='btnContact'>Contact</a></li>   ");}
+
+else {
+
+document.write("<li><a href='contact.html'>Contact</a></li>   ");
+
+}
+
+</script>
+    </ul>
+  </nav>
+    </div><!--/end topbar-->
+   
+
+   <div class="row header" >
+    <div class="large-12 columns" >
+  
+      <h2>Teacher Support Network</h2>
+      <p class="byline">Complete redesign and Drupal implementation for an education charity</p>
+
+    
+    </div>
+  </div>
+  
+
+<div class="row table" id="toprow">
+  <div class="large-6 columns" id="leftImage">
+  <img id="imageOne" src="img/tsnhomenew.jpg">  
+  </div>
+  
+  
+  <div class="large-6 columns" id="rightImage">
+  <img id="imageTwo" src="img/brick.jpg">
+  </div>
+
+  
+</div><!--/#toprow-->
+  
+
+
+<div class="row table">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>The Brief</h4>
+        </div>
+    
+    
+      <div class="large-7 columns"><!-- 1 right-->
+        <p>My task was to modernise the Teacher Support Network (TSN) digital presence, reduce the bounce rate and clarify the purpose of the site.</p>
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+
+
+
+    
+    <div class="row table">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>The Challenge</h4>
+        </div>
+    
+    
+      <div class="large-7 columns drop"><!-- 1 right-->
+        <p><img src="img/oldtsn.jpg" style="width: 33%" align="right" hspace="10">The TSN had a proprietary CMS that only worked with lists of news items - like Wordpress before they made it good. It was hard to use, ugly and prone to falling over.<br /><br />
+Additionally the TSN simply didn't know how to think about digital. For instance they thought that analytics was just a numbers game - the more the better. Never mind if the traffic you were paying for was failing to find anything they wanted and were fleeing the site,  annoyed and never to return.</p>
+
+   
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+
+
+    <div class="row table ">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>Solution</h4>
+        </div>
+    
+    
+      <div class="large-9 columns"><!-- 1 right-->
+        <p>I ran a classic web project; Analytics, requirements gathering, prototyping, user testing. </p>
+
+        <p>Responsible for all phases of the project, from initial concept right through to code, I started with by using Agile style 'story cards' to capture staff needs. By testing IA with Optimal Sort I was able to very quickly map out better user journeys.</p>
+
+        <p>Because I knew I was going to use Drupal  for the final site I used it to make a prototype that I could test functionality out on, knowing I could skin it and deploy quickly</p>
+
+        <p>After that I developed a couple of candidate designs based on a 12 column grid and we were ready to launch a couple of months later: Fully responsive site on Drupal7 using a heavily customised theme.</p>
+
+        <p>The result makes extensive use of views and taxonomy to provide related items. Once content is tagged by editors it is automatically distributed around the site in useful ways.</p>
+</div>
+<div class="large-2"></div>
+</div>
+
+
+<div class="row table drop">        
+      
+
+
+<div class="large-6 columns" ><img src="img/tsngrid.jpg" style="width:100%"> <p class="caption">12 col grid</p></div>
+
+<div class="large-2 columns"><img src="img/tsntest2.jpg"  style="width:100%"><p class="caption">Candidate design</p></div>
+
+<div class="large-4 columns" ><img src="img/tsncols.jpg" style="width:100%"><p class="caption">Type treatment</p></div>
+
+
+</div><!--/row-->
+
+
+    <div class="row table ">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>The Results</h4>
+        </div>
+    
+    
+      <div class="large-7 columns"><!-- 1 right-->
+        <p>All very good:</p>
+        <ul>
+        <li>Bounce rate - dropped fifty percent</li>
+        <li>Page view times - doubled</li>
+        <li>Pages per visit - doubled</li>
+        </ul>
+        
+  
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+    
+    <div class="row table ">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>Content strategies</h4>
+        </div>
+    
+    
+      <div class="large-7 columns"><!-- 1 right-->  
+<p>After launch I devised a number of content strategies to get increased engagement from the users. For instance we developed high-quality downloadable content on 'pain-points' for teachers. By using a Google Adwords grant to get people to get directly to those products we doubled site traffic in under a month. This product based approach was so much more effective than any PR or campaigning work, which tends to be bland and cautious in a conservative charity like TSN.
+    
+  </div>
+
+
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+    
+    
+
+
+  <div class="row ">
+        <div class="large-7 large-offset-3  columns" id="seealso">
+  
+    <p class="tryme"><a href="dec.html"> See also: Project Management for the DEC</a></p>
+
+  <p class="tryme"><a href="sanger.html"> See also: Sanger Institute - revitalising a massive site</a></p>
+  
+      
+    
+    </div>
+  </div>
+    
+
+<footer class="row " id="thisfooter">
+
+          <div class="large-12 columns footer">     
+          </div>
+
+
+        </footer>  
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+      <script src="js/foundation/foundation.interchange.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

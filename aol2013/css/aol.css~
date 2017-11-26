@@ -1,0 +1,155 @@
+/* green #E0E4D5
+pink #601B4A
+pale straw #FFF9F2
+dirty grey #DBD5CE
+dark dirty grey #B3A697
+almost black #28231E
+
+bg #EAE6DB
+
+bright bluse #4DD2FF #2a95ba
+bright green: #00D9A3;
+
+
+*/
+
+* {font-family: 'Roboto', Georgia, serif; }
+body {background-color:  white;
+ font-size:1em; line-height: 1.2em; color: #2D3037;}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6 {font-family: "roboto"; font-weight: 400}
+
+.top-bar .name h1 a {font-family: "roboto"; letter-spacing: .02em; color: white; text-align: left; font-weight: 300}
+
+.large-2 h4, .large-3 h4 {text-align: right; font-size:.9em; padding:0px 1em 0 0;  text-transform: uppercase; line-height: 1.3em; font-weight: 700/*border-right: 1px solid #2D3037; height: 3.2em;*/ }
+.highlights h4 { font-size:1.2em; text-align: left; font-weight: normal}
+
+@media only screen and (max-width: 40.063em) {
+	.top-bar .name h1 a {color: white; font-weight: 500; font-family: Roboto}
+}
+
+.top-bar h1 a {font-size: 1.8em; margin-bottom: 1em; font-weight:400; letter-spacing: 1px;}
+@media only screen and (min-width: 40.063em) {
+
+}
+
+}
+.white {background-color: white}
+.header {background-color: /*#E4ECDD*/; margin-top:1em;}
+.header h2 {line-height:1; padding:0; margin: .2em 0 .1em 0;}
+.header p {line-height: 1;}
+.tryme  a {float:right; background-color: #00D9A3;border: 1px solid #00D9A3; /*border-radius: 10px;*/ padding: 3px 6px; margin-bottom:1em; line-height: 1.2em; color: black;}
+.tryme a:hover {border: 1px solid #00D9A3; background-color: white; color:#00D9A3;}
+#tryme {opacity: .1;}
+
+
+
+/*********** 
+Clients
+***********/
+#clientsinner {height: 1px; box-shadow: none; overflow: auto; padding: 1em 0 0 1em; background-color: white}
+#trigger-clients {background-color: #00D9A3; /*border-radius: 10px;*/ padding: 3px 6px; margin-bottom:1em;}
+
+
+ul  {list-style-position: inside; padding-bottom: 0; position: relative; margin-top:1em;}
+
+#clientsinner ul {list-style-position: inside; padding-bottom: 0; position: relative; margin-top:1em;margin-right: 1em;}
+#clientsinner li {padding-bottom: 0; line-height: 1.9  em; position: relative; list-style-type: none;padding-left: 1em; font-style: 'Volkhov'; border-bottom: 1px #DBD5CE dotted; width: 100%; margin-right: 1em; color: white;}
+
+#clientsinner li a {border-bottom: 1px #B3A697 dotted; }
+#clientsinner li:hover #clientsinner a {color:red;}
+#clientsinner li span a {float: right; font-size:.9em; color: #4DD2FF; text-decoration: none; border-bottom: none; font-size: 1.1em; }
+#clientsinner li span a:hover {color: black}
+
+#clientsfilter {padding-top: 1em; padding-left: 1em;}
+#clientfilter span {color: #28231E;margin-bottom:1em; font-size: 1em; margin: 5px 1em 0 0; text-transform: uppercase; border-bottom: 1px black dotted; font-family: arial}
+p.closeme  {position: absolute: bottom: 20px;}
+ #close {background-color: #4DD2FF ; color: #2D3037;  padding: 3px 6px;}
+
+
+
+.highlights p strong {} 
+p.signature, p.byline {font-size: 2em; padding-top:1em; text-align: left; line-height: 1.25em; margin-bottom: 12px; letter-spacing: .05em; margin-top:0; font-family: 'Roboto Condensed'; font-weight: 500;}
+p.byline {font-size: 1.1em; padding-top:0; font-style: normal; text-shadow: none;  line-height: 1.5em; font-family: 'Roboto'; font-weight: 300;}
+hr {height: 1px; color:red; width:100%; margin: zero; padding:0}
+ #toprow {margin-bottom: 2em}
+ 
+/* what i do */
+
+body.what-i-do {background: -webkit-gradient(radial, center center, 0, center center, 460, from(#00D9A3), to(white)); /* Safari 5.1+, Chrome 10+ */ background: -webkit-radial-gradient(circle, #00D9A3, white); /* Firefox 3.6+ */ background: -moz-radial-gradient(circle, #00D9A3, white); /* IE 10 #2F2727 */ background: -ms-radial-gradient(circle, #00D9A3, white);}
+
+#delayTop {opacity: .1; background-color: #EFECE4}
+#delayWrapper {opacity: .1; background-color: #EFECE4}
+.what-i-do #swipe {background-color: white; ; border: none; box-shadow: none}
+
+
+/* IMAGE HANDLING
+
+//dec*/ 
+
+#leftImage { background-color: #4DD2FF; padding: 20px;}
+#rightImage { background-color: #00D9A3; padding: 20px;}
+
+.dec #swipe {}
+
+#leftImage img, #rightImage img{opacity:0;
+filter:alpha(opacity=0); } /* For IE8 and earlier 
+
+#imgClip_ {position:relative;  left: -100px; top:-100px;z-index: -100}
+#imgFrame { color: red;background-color: #4DD2FF; display: relative; position: absolute; overflow: hidden; }*/
+
+/* sanger */
+
+#sangerTest {width: 100%; border: 10px solid #4DD2FF;}
+
+#sangerMap{width: 100%;border: 10px solid #00D9A3;}
+
+#sangerProto {width: 100%;  border: 10px solid #4DD2FF;}
+
+#sangerDina {width: 100%; border: 10px solid #00D9A3;}
+
+.stripe {background-color:#CCF7ED; padding: 1em 0 ; margin-bottom: 2em;}
+.unstripe {margin-bottom: 2em;}
+.white-stripe {background-color: white; padding-top: 1em;}
+
+.stripe p {/*background-color: #FBFAF8; padding: 1em .5em 1em 1em;*/}
+
+.tsn .drop {margin-bottom: 2em;}
+
+
+
+/* SHOWCASE */
+
+ #orbit {background-color: /*#4DD2FF*/ white ; padding-top: 1em ;margin-top: 3em; margin-bottom: 3em; box-shadow:0px 0px 30px 20px #00D9A3}
+
+ .orbit-container .orbit-slides-container > * .orbit-caption {background-color:  white /*#4DD2FF*/;  color: black; font-weight: 700; font-size: 1.2em; }
+.orbit-container {background-color: red]
+}
+
+
+.orbit-bullets {background-color: red;
+   display: none;
+    overflow: hidden;
+    position: inline;padding: none;
+    top: 10px;}
+
+ .showcase h3 {width: 100%; border-bottom: 1px dotted #B3A697; border-top: 1px dotted #B3A697; height: 3em; line-height: 3em; padding-left: .6em;}
+
+ .showcase .drop {height: 0; overflow: hidden;}
+
+  .showcase  .large-2 ul {list-style-type: none; padding:3px 0 0 0; margin:0;}
+   .showcase  .large-2 ul li {font-size: .82em; line-height: 1.5em}
+
+#swipe {border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; margin-bottom: 2em;}
+
+
+/* what i think */
+
+
+.what-i-think .large-2 h4, .what-i-think .large-3 h4 {text-align: right; font-size:.9em; padding:5.845em 1em 0 0;  text-transform: uppercase; line-height: 1.3em; font-weight: 700/*border-right: 1px solid #2D3037; height: 3.2em;*/ }
+
+.what-i-think h3 {padding-top:1em;}

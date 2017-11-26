@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allen O'Leary</title>
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,100,300,500,700|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/aol.css" />
+
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/CSSRulePlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/ColorPropsPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/EaselPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/TextPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/ScrollToPlugin.min.js"></script>
+
+
+<style>
+
+@media only screen and (min-width: 40.063em) {
+
+#thisdrop {color: white; opacity:0; height:0; overflow: hidden}
+#thisone {opacity:0; }
+#mybody {}
+#fizz {text-align: center; font-weight: 100; font-size: 4em; padding: 0 0 0 0;}
+#pop {opacity:1; color: black; text-shadow: 0px 0px 10px #000}
+#pop .highlight {color:#999;}
+/*.contain-to-grid {opacity: 0}*/
+#thisfooter {opacity: 0}
+
+}
+
+</style>
+
+<script>
+
+var winwidth = window.matchMedia("screen and (min-width: 40.063em)")
+
+if (winwidth.matches){ 
+ window.onload = function() {
+  
+  var mypop = document.getElementById("pop");
+  var mythis = document.getElementById("thisone");
+ // var mynav = document.getElementById("mytop");
+  var mybody = document.getElementById("mybody");
+  var myfooter = document.getElementById("thisfooter");
+   var mydrop = document.getElementById("thisdrop")
+  var showThisDrop = document.getElementById("fizz")
+    var stopThisDrop = document.getElementById("unfizz")
+
+
+//recolor h2 mypop text
+  tweenpop = TweenMax.to(mypop,3, {color: 000, ease:Power2.easeIn, delay: 0, opacity:1, textShadow: "0px 0px 10px white" });
+  tweenPageDelay = TweenMax.to(mythis, 6,{opacity: 1, ease:Power2.easeOut,  delay: 2});
+ // tweenNavDelay = TweenMax.to(mynav, 3,{opacity: 1, ease:Power2.easeIn,  delay: 7, zIndex:100});
+tweenBodyDelay = TweenMax.to(mybody, 3,{opacity: 1, ease:Power2.easeIn,  delay: 6,  zIndex:1});
+tweenFooterDelay = TweenMax.to(myfooter, 3,{opacity: 1, ease:Power2.easeIn,  delay: 7, zIndex:100});
+   popThisDrop = TweenMax.to(mydrop,3, {height: "+=740", paused: true, opacity:1, backgroundColor: "#000"});
+   shrinkFizz=TweenMax.to(showThisDrop,.5, {height: "0", paused: true, opacity:0});
+   pulseFizz=TweenMax.to(showThisDrop,.8, {opacity:.8, yoyo: true, repeat:8, color: "#4DD2FF", delay:6});
+
+
+showThisDrop.onclick = function() {
+  popThisDrop.play();
+  shrinkFizz.play();
+
+}
+
+stopThisDrop.onclick = function() {
+  popThisDrop.reverse();
+  shrinkFizz.reverse();
+
+}
+
+}
+
+}
+
+
+
+</script>
+
+    <script src="js/vendor/modernizr.js"></script>
+
+
+
+
+  </head>
+  <body class="home" >
+
+
+
+
+
+
+
+  
+ <div class="contain-to-grid sticky" data-options="sticky_on: large">
+  <nav class="top-bar" data-topbar> <ul class="title-area"> <li class="name"> <h1><a href="index.html">Allen O'Leary</a></h1> </li> <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> </ul> <section class="top-bar-section">
+   <!-- Right Nav Section --> <ul class="right"> 
+    <li class="has-dropdown"><a href="#">What I do</a>
+    <ul class="dropdown"> 
+              <li><a href="projects.html">Project Management</a></li> 
+             <li><a href="digicomms.html">Digicomms & Marketing</a></li>
+             <li><a href="ia-ux.html">IA and UX Design</a></li>
+             <li><a href="design-code.html">Visual Design and Coding</a></li>
+             <li><a href="cms.html">CMS config and Management</a></li>
+           
+       </ul> 
+      </li>
+    <li class="has-dropdown"> <a href="case-studies.html">My work</a>
+        <ul class="dropdown">
+            <li><a href="showcase.html">Design showcase & client list</a></li>  
+             <li><a href="dec.html">The DEC - Project Management - Case Study</a></li>
+             <li class="active"><a href="sanger.html">The Sanger - IA, UX, UI - Case Study</a></li>
+             <li><a href="tsn.html">Teacher Support - Drupal site - Case Study</a></li> 
+             <li><a href="cv.html">Complete CV</a></li> sfcgrv9hty
+       </ul> 
+   </li>
+   <!--<li><a href="#">Articles</a></li>-->
+    <li><a href="#" id="btnContact">Contact</a></li>   
+    </ul>
+  </nav>
+    </div><!--/end topbar-->
+
+
+         <div data-interchange="[contact-large.html, (medium)]"></div>
+   
+    
+    <div class="row page" id="mybody">
+      <div class="large-12 columns">
+      	<div>
+	        <h2 id="pop">A Super <span class="highlight">/</span> Experienced Digital Producer </h2>
+          <h2 id="fizz">&#x2295;</h2>
+	        
+	       </div>
+
+          <div class="row page" data-equalizer id="thisdrop">
+            <div class="large-12 home">
+
+    
+
+ <div class="headline"><h1>I bring it all together</h1></div>
+        
+            <a href="projects.html"><div class="feature"><h2>Project Management</h2>
+            <p>Experience of complex projects with multiple dependencies</p></div></a>
+
+            <a href="digicomms.html"><div class="feature"><h2>Digital Comms & Marketing</h2>
+            <p>I've run sites in the public sector, for charities and ecommerce  startups - I've been around the block</p></div></a>
+
+            <a href="ia-ux.html"><div class="feature"><h2>IA and UX Design</h2>
+            <p>From writing requirements, through user testing, to complex IA and wireframing</p></div></a>
+
+            <a href="design-code.html"><div class="feature"><h2>Visual Design and Coding</h2>
+            <p>Can design and code responsive sites from scratch</p></div></a>
+
+            <a href="cms.html"><div class="feature"><h2>CMS Configuration and Management</h2>
+            <p>Particularly drupal - but I am not afraid to look any CMS in the eye</p></div></a>
+
+ <h2 id="unfizz">&#x2297;</h2>
+        </div>
+      </div>
+
+
+
+          <div class="row page" data-equalizer id="thisone">
+            <div class="large-12 columns home">
+
+              <h3>Available for Contract and Freelance work</h3>
+          <p>Since 1997 I have been designing, managing, advising on and project managing website projects and digital comms, from the very small client to the very large.</p>
+          
+<p>I have excellent <a href="ia-ux.html">IA and UX skills</a>, I'm a <a href="design-code.html">handy designer and coder</a> and possess an excellent knowledge of <a href="cms.html">CMSs, Drupal in particular</a>. My fluency with the whole <a href="digicomms.html">digital marcomms environment and digital production processes</a> puts me in sa position to delivery exceptional work.</p>
+<p>Currently I am putting work into developing my <a href="projects.html">project management skills</a> so I can apply my knowledge in a useful and productive manner.</p>
+<p>I want work where I can help steering organisations' digital efforts with a combination of leadership, digital project management and in-depth digital knowledge.</p>
+       
+      	        <div class="large-8 medium-8 small-12 large-offset-2 medium-offset-2 columns" id="links">
+      	       
+      	    		<a href="cv.html"><p class="graybg"><img src="img/cv_thm.gif" height="96" width="96">The whole story, as told in job titles.</p></a>
+                <a href="showcase.html"><p  class="graybg"><img src="img/imperial_thm.jpg" height="96" width="96">Visual design samples</p></a>
+                 <a href="showcase.html"><p  class="graybg"><img src="img/sanger_home_thm.jpg" height="96" width="96">Case Studies</p></a>
+                <a href="contact.html"><p  class="graybg"><img src="img/aol.png" height="96" width="96" class="tone">Contact me</p></a>
+
+
+                 
+      	    	</div> 
+	        	
+  	        	
+	        	
+              
+	        	    
+					</div>
+        </div>
+
+
+
+        <footer class="row " id="thisfooter">
+
+          <div class="large-12 columns footer">     
+          </div>
+
+
+        </footer>  
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+      <script src="js/foundation/foundation.interchange.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

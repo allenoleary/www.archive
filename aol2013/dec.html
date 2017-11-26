@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allen O'Leary</title>
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,100,300,500,700|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/aol.css" />
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/CSSRulePlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/ColorPropsPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/EaselPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/TextPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.0/plugins/ScrollToPlugin.min.js"></script>
+
+
+<script>
+
+var winwidth = window.matchMedia("screen and (min-width: 800px)")
+
+if (winwidth.matches){ 
+ window.onload = function() {
+  
+
+  var image1 = document.getElementById('imageOne');
+  var image1Btn = document.getElementById('leftImage');
+  var image2Btn = document.getElementById('rightImage');    
+  var image2 = document.getElementById('imageTwo');
+  
+  //var topSwipe = document.getElementById('swipe');
+
+  
+  // set gsap tweens up
+
+  //run on page load - fade in images
+  imgSizer = TweenMax.to(image1,4, {opacity: 1, delay: 1});
+  imgSizer2 = TweenMax.to(image2,6, {opacity: 1, delay: 1.5});
+  //run on roll over images
+  imgWipe1  = TweenMax.to(image1,1, {scale: 1.5, paused: true, boxShadow:"0px 0px 30px 20px #4DD2FF", zIndex:"1000", left: "100px", top: "30%"});
+  imgWipe2  = TweenMax.to(image2,2, {scale: 1.5, paused: true, boxShadow:"0px 0px 30px 20px #00D9A3", zIndex:"1000", left: "0", top: "30%"});
+    imgWipe35  = TweenMax.to(image2Btn,2, {opacity: 0, paused: true});
+  shiftLeft = TweenMax.to(image1Btn,3, {left: "+=200", paused: true});
+  shiftRight = TweenMax.to(image2Btn,3, {right: "+=200", paused: true});
+  
+
+
+
+
+image1Btn.onmouseover = function() {
+  imgWipe1.play();
+  shiftLeft.play();
+    imgWipe35.play();
+}
+
+image1Btn.onmouseout = function() {
+  imgWipe1.reverse();
+  shiftLeft.reverse();
+    imgWipe35.reverse();
+
+}
+
+image2Btn.onmouseover = function() {
+  imgWipe2.play();
+  shiftRight.play();
+}
+
+image2Btn.onmouseout = function() {
+  imgWipe2.reverse();
+  shiftRight.reverse();
+
+}
+
+}
+
+
+
+}
+
+else {
+
+document.write("<style> #leftImage img, #rightImage img{opacity:1;filter:alpha(opacity=1);</style>");
+
+}
+
+</script>
+ 
+</style>
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body class="casestudy">
+  
+  <div class="contain-to-grid sticky" data-options="sticky_on: large">
+  <nav class="top-bar" data-topbar> <ul class="title-area"> <li class="name"> <h1><a href="index.html">Allen O'Leary</a></h1> </li> <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> </ul> <section class="top-bar-section">
+   <!-- Right Nav Section --> <ul class="right"> 
+    <li class="has-dropdown"><a href="what-i-do.html">What I do</a>
+    <ul class="dropdown"> 
+					    <li><a href="digicomms.html">Digicomms and Management</a></li> 
+					   <li><a href="ia-ux-content.html">IA, UX, Content Strategy</a></li>
+					   <li><a href="design-build.html">Complete site design and build</a></li>
+					 
+		   </ul> 
+		  </li>
+    <li class="has-dropdown"> <a href="case-studies.html">My work</a>
+		    <ul class="dropdown">
+            <li><a href="showcase.html">Design showcase & client list</a></li>  
+					   <li class="active"><a href="dec.html">The DEC - Project Management - Case Study</a></li>
+					   <li><a href="sanger.html">The Sanger - IA, UX, UI - Case Study</a></li>
+					   <li><a href="tsn.html">Teacher Support - Drupal site - Cas Study</a></li> 
+             <li><a href="cv.html">Complete CV</a></li> 
+		   </ul> 
+   </li>
+   <!--<li><a href="#">Articles</a></li>-->
+		<li><a href="#">Contact</a></li>   
+    </ul>
+  </nav>
+    </div><!--/end topbar-->
+   
+
+    <div class="row">
+    <div class="large-12 columns">
+    
+      <h2>DEC - Project Manager</h2>
+      <p class="byline">I worked with the DEC as a freelance client-side Project Manager on a major Drupal build.</p>
+  </p>
+    </div>
+  </div>
+  
+
+<div class="row table">
+  <div class="large-6 columns" id="leftImage">
+  <img id="imageOne" src="img/lg-dec.png">  
+  </div>
+  
+  
+  <div class="large-6 columns" id="rightImage">
+  <img id="imageTwo" src="img/dec2.jpg">
+  </div>
+
+  
+</div><!--/#toprow-->
+  
+    <div class="row table">
+      <div class="large-8 large-offset-3 columns"><!-- 1 left-->
+        <h2>2011</h2>
+      </div>
+
+  
+      <div class="large-3  columns"><!-- 1 left-->
+        <h4>The Brief</h4>
+      </div>
+    <div class="large-7 columns"><!-- 1 right-->
+    
+
+      <p>The DEC were replacing their dodgy old site with a new Drupal build. They selected me to operate between themselves and their digital design and build agency. My job was to get good value for money and to advise the DEC's communication manager on digital as this was his first web build.</p>
+
+      <div class="row highlights" id="thisrow">
+          <div class="large-6 columns">
+          <h5>So what did I do?</h5>
+          <p>Provided day to day liason between the DEC and their Agency, reported on progress, trouble-shooted both ways and generally advised the DEC on what the agency would expect and when, and what 'reasonable scope changes' might mean. </p>
+          </div>
+          <div class="large-6 columns">
+          <h5>Did it work?</h5>
+          <p>Very well. I was able to effectively communicate between the agency and the DEC and keep things on an even keel.</p>
+          </div>
+      </div><!-- /row-->
+  
+      
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div><!-- /12row-->
+
+
+    
+    <div class="row table">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>High performance</h4>
+        </div>
+    
+    
+      <div class="large-8 columns"><!-- 1 right-->
+        <p>A unique feature of this site was that it is hosted on the Acquia cloud service so it can be 'spun up' on larger services with a couple of days notice - critical for the DEC as they take millions of pounds in a couple of days when an appeal is launched.</p>
+        
+        
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+
+     <div class="row table">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>High value</h4>
+        </div>
+    
+    
+      <div class="large-8 columns"><!-- 1 right-->
+        <p>Since it was launched the website has remained available and has coped with massive traffic spikes. When Simon Cowell tweeted their cause the DEC site kept up! </p>
+        <p>The website is a key part of the fundraising of the DEC and has many tens of millions of pounds put through it in the last few years.</p>
+        
+        
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+
+    <div class="row table">
+      <div class="large-8 large-offset-3 columns"><!-- 1 left-->
+        <h2>2014</h2>
+      </div>
+    </div>
+
+ <div class="row table">
+        <div class="large-3 columns"><!-- 1 left-->
+          <h4>The Return</h4>
+        </div>
+    
+    
+      <div class="large-8 columns"><!-- 1 right-->
+        <p>I am happy to say that the DEC invited me back again to be the web project manager on thier new, very ambitious website project. This time they are embracing mobile and social and suiting their site to the very much busier and more sophisticated digital landscape of today.</p>
+        
+        
+      </div>
+      <div class="large-2 columns"><!-- spacer --></div>
+    </div> <!-- row -->
+
+
+
+<div class="row">
+    <div class="large-7 large-offset-3  columns" id="seealso">
+  
+    
+  <p class="tryme"><a href="tsn.html"> See also: Teacher Support Network - a complete transformation</a></p>
+  
+    
+    </div>
+  </div>
+
+    
+
+<footer class="row " id="thisfooter">
+
+          <div class="large-12 columns footer">     
+          </div>
+
+
+        </footer>  
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+      <script src="js/foundation/foundation.interchange.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
